@@ -1,0 +1,7 @@
+{
+  "name": "AlMushafAI",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
