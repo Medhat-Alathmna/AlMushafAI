@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/surah-list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ surahName || '📖 المصحف الشريف' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-text-center mushaf-content">
+  <swiper-container
+    [modules]="[Navigation, Pagination, Zoom, Keyboard]"
+    [navigation]="true"
+    [pagination]="{ clickable: true }"
+    [zoom]="true"
+    [keyboard]="{ enabled: true }"
+    [direction]="'horizontal'"
+    dir="rtl"
+    class="mushaf-swiper"
+    (slideChange)="onSlideChange($event)"
+  >
+    @for (page of pages; track $index) {
+      <swiper-slide>
+        <ion-card class="mushaf-page">
+          <ion-card-content>
+            <ion-img
+              [src]="'assets/quran-pages/' + page + '.png'"
+              alt="صفحة {{ page }}"
+              class="page-img"
+            ></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+    }
+  </swiper-container>
+
+  <ion-footer class="page-footer">
+    <ion-toolbar color="light">
+      <ion-title size="small">
+        الصفحة {{ currentPage + startPage - 1 }} / {{ endPage }}
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
