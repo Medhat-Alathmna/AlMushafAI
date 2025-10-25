@@ -3,17 +3,21 @@ import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { Navigation, Pagination, Zoom, Keyboard } from 'swiper/modules';
-import { QuranService } from 'src/app/services/quran..service';
+
+import { ActionModalComponent } from 'src/app/components/action-modal/action-modal.component';
+import { Audio as AudioService } from 'src/app/services/audio.service';
 import { Ai } from 'src/app/services/ai.service';
-import { Audio } from 'src/app/services/audio.service';
 import { AlertController } from '@ionic/angular';
+import { QuranService } from 'src/app/services/quran..service';
+import { addIcons } from 'ionicons';
+import { readerOutline,bookOutline, optionsOutline, bookmarkOutline, informationCircleOutline, playOutline, squareOutline, stopOutline, micOutline } from 'ionicons/icons';
 @Component({
   standalone: true,
   selector: 'app-mushaf-viewer',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './mushaf-viewer.page.html',
   styleUrls: ['./mushaf-viewer.page.scss'],
-  imports: [IonicModule, CommonModule],
+  imports: [IonicModule, CommonModule, ActionModalComponent],
 })
 export class MushafViewerPage implements OnInit {
   pages: string[] = [];
@@ -24,7 +28,7 @@ showBasmala = true;
   surahName = '';
   startPage = 1;
   endPage = 1;
-  viewMode: 'image' | 'text' = 'image';
+  viewMode: 'image' | 'text' = 'text';
   ayat: { index: string; text: string }[] = [];
 
   // Swiper modules
@@ -34,12 +38,14 @@ showBasmala = true;
   Keyboard = Keyboard;
 
 constructor(
-    private quranService: QuranService,
-    private route: ActivatedRoute,
-    private audio: Audio,
-    private ai: Ai,
-    private alertCtrl: AlertController
-  ) {}
+  private route: ActivatedRoute,
+  private quranService: QuranService,
+  private ai: Ai,
+  private alertCtrl: AlertController,
+  private audio: AudioService
+) {
+  addIcons({ readerOutline, bookOutline, playOutline, squareOutline, optionsOutline, bookmarkOutline, informationCircleOutline, stopOutline, micOutline });
+}
   private AYAT_PER_PAGE = 12; 
 textPages: { ayat: { index: string; text: string }[] }[] = [];
   recording = false;
@@ -158,16 +164,50 @@ private splitAyatIntoPages() {
   onModeChange(ev: any) {
     this.viewMode = ev?.detail?.value === 'text' ? 'text' : 'image';
   }
+  // Floating actions + modal state
+  isRecording = false;
+  isModalOpen = false;
+  modalTitle = '';
+  modalBody = '';
+
+  openModal(kind: string) {
+    this.isModalOpen = true;
+    if (kind === "settings") {
+      this.modalTitle = "إعدادات العرض";
+      this.modalBody = "<p>اختر نمط العرض، التكبير، وخيارات الصفحة.</p>";
+    } else if (kind === "bookmark") {
+      this.modalTitle = "حفظ موضع";
+      this.modalBody = "<p>سيتم دعم الإشارات المرجعية لاحقاً.</p>";
+    } else {
+      this.modalTitle = "معلومات السورة";
+      this.modalBody = `<p>السورة: ${this.surahName || this.surahId}</p><p>من الصفحة ${this.startPage} إلى ${this.endPage}</p>`;
+    }
+  }
+
+  async onRecordToggle() {
+    try {
+      if (!this.isRecording) {
+        await this.audio.startRecording();
+        this.isRecording = true;
+      } else {
+        await this.onStop();
+      }
+    } catch {}
+  }
+
+  onPlay() {
+    (this.audio as any).playLast?.();
+  }
+
+  async onStop() {
+    try {
+      const text = await this.audio.stopAndTranscribe();
+      this.isRecording = false;
+      this.modalTitle = "نص التسجيل";
+      this.modalBody = text || "لم يتم التقاط نص.";
+      this.isModalOpen = true;
+    } catch {
+      this.isRecording = false;
+    }
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,13 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss.emit()" color="medium">إغلاق</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+<ion-content class="ion-padding">
+  <div class="modal-body" [innerHTML]="body"></div>
+</ion-content>
+

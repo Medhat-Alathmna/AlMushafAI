@@ -7,11 +7,11 @@
     <ion-segment class="view-toggle" [value]="viewMode" (ionChange)="onModeChange($event)" slot="end" dir="rtl">
       <ion-segment-button value="image">
         <ion-icon name="book-outline"></ion-icon>
-        <ion-label>ØµÙˆØ±</ion-label>
+        <ion-label>صورة</ion-label>
       </ion-segment-button>
       <ion-segment-button value="text">
         <ion-icon name="reader-outline"></ion-icon>
-        <ion-label>Ù†Øµ</ion-label>
+        <ion-label>نص</ion-label>
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
@@ -36,7 +36,7 @@
           <ion-card-content>
             <ion-img
               [src]="getImageSrc(page)"
-              alt="Ø§Ù„ØµÙØ­Ø© {{ page }}"
+              alt="الصفحة {{ page }}"
               class="page-img"
             ></ion-img>
           </ion-card-content>
@@ -47,7 +47,7 @@
     <ion-footer class="page-footer">
       <ion-toolbar color="light">
         <ion-title size="small">
-          Ø§Ù„ØµÙØ­Ø© {{ currentPage + startPage - 1 }} / {{ endPage }}
+          الصفحة {{ currentPage + startPage - 1 }} / {{ endPage }}
         </ion-title>
       </ion-toolbar>
     </ion-footer>
@@ -77,13 +77,47 @@
     </swiper-slide>
   </swiper-container>
 </ng-template>
-<ion-fab vertical="bottom" horizontal="center" slot="fixed">
-  <ion-fab-button color="{{ recording ? 'danger' : 'primary' }}" (click)="toggleRecording()">
-    <ion-icon [name]="recording ? 'stop' : 'mic'"></ion-icon>
-  </ion-fab-button>
-</ion-fab>
 
-</ion-content>
+
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button [color]="isRecording ? 'danger' : 'primary'" (click)="onRecordToggle()">
+      <ion-icon [name]="isRecording ? 'stop-outline' : 'mic-outline'"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="medium" (click)="onPlay()">
+        <ion-icon name="play-outline"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="warning" (click)="onStop()">
+        <ion-icon name="square-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab></ion-content>
+
+<!-- Global actions footer with modern icons -->
+<ion-footer class="actions-footer">
+  <ion-toolbar style="direction: rtl;">
+    <ion-buttons slot="primary">
+      <ion-button fill="clear" (click)="openModal('settings')">
+        <ion-icon name="options-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="openModal('bookmark')">
+        <ion-icon name="bookmark-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear" (click)="openModal('info')">
+        <ion-icon name="information-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
+<!-- Reusable modal component -->
+<ion-modal [isOpen]="isModalOpen" (didDismiss)="isModalOpen = false">
+  <ng-template>
+    <app-action-modal [title]="modalTitle" [body]="modalBody" (dismiss)="isModalOpen=false"></app-action-modal>
+  </ng-template>
+</ion-modal>
+
+
 
 
 

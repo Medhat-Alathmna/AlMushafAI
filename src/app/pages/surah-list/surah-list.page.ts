@@ -3,7 +3,8 @@ import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { QuranService } from 'src/app/services/quran..service';
-
+import { addIcons } from 'ionicons';
+import { libraryOutline ,bookOutline,chevronBackOutline} from 'ionicons/icons';
 @Component({
   selector: 'app-surah-list',
   standalone: true,
@@ -14,7 +15,9 @@ import { QuranService } from 'src/app/services/quran..service';
 export class SurahListPage implements OnInit {
   surahs: any[] = [];
 
-  constructor(private quranService: QuranService) {}
+  constructor(private quranService: QuranService) {
+    addIcons({ libraryOutline, bookOutline, chevronBackOutline });
+  }
 
   async ngOnInit() {
     this.surahs = await this.quranService.getAllSurahs();

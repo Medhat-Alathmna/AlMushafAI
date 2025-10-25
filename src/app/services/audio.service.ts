@@ -9,6 +9,8 @@ export class Audio {
   private chunks: BlobPart[] = [];
   private stream!: MediaStream;
   private usingCapacitor = false;
+  private lastUrl: string | null = null;
+  private player?: HTMLAudioElement;
 
   constructor() {
     this.usingCapacitor = Capacitor.isNativePlatform();
@@ -34,11 +36,13 @@ export class Audio {
       const base64 = result.value.recordDataBase64;
       if (!base64) throw new Error('Failed to get recording data');
       const audioBlob = this.base64ToBlob(base64, 'audio/wav');
+      this.setLastUrl(audioBlob);
       return await this.sendToWhisper(audioBlob);
     } else {
       return new Promise(resolve => {
         this.mediaRecorder.onstop = async () => {
           const audioBlob = new Blob(this.chunks, { type: 'audio/webm' });
+          this.setLastUrl(audioBlob);
           const text = await this.sendToWhisper(audioBlob);
           resolve(text);
         };
@@ -46,6 +50,20 @@ export class Audio {
         this.stream.getTracks().forEach(t => t.stop());
       });
     }
+  }
+
+  playLast() {
+    if (!this.lastUrl) return;
+    if (!this.player) this.player = document.createElement('audio');
+    this.player.src = this.lastUrl;
+    this.player.play();
+  }
+
+  private setLastUrl(blob: Blob) {
+    try {
+      if (this.lastUrl) URL.revokeObjectURL(this.lastUrl);
+      this.lastUrl = URL.createObjectURL(blob);
+    } catch {}
   }
 
   private async sendToWhisper(audioBlob: Blob): Promise<string> {

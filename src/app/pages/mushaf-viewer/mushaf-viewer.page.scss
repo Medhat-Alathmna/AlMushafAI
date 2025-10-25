@@ -273,6 +273,23 @@ ion-img {
   padding: 4px 0;
   margin-top: 10px;
 }
+
+/* Modern actions footer */
+.actions-footer ion-toolbar {
+  --background: rgba(255, 253, 247, 0.85);
+  --color: #3b2f17;
+  backdrop-filter: saturate(1.2) blur(6px);
+  border-top: 1px solid #e8d9b5;
+}
+
+.actions-footer ion-button {
+  --padding-start: 10px;
+  --padding-end: 10px;
+}
+
+ion-fab {
+  z-index: 20;
+}
 ion-fab-button[color="danger"] {
   animation: pulse 1.2s infinite;
 }
