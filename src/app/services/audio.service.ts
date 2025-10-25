@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+﻿import { Injectable } from '@angular/core';
 import { Capacitor } from '@capacitor/core';
 import { VoiceRecorder } from 'capacitor-voice-recorder';
 import { environment } from 'src/environments/environment';
@@ -19,7 +19,7 @@ export class Audio {
   async startRecording() {
     if (this.usingCapacitor) {
       const perm = await VoiceRecorder.requestAudioRecordingPermission();
-      if (!perm.value) throw new Error('لم يتم منح إذن الميكروفون');
+      if (!perm.value) throw new Error('Microphone permission is required');
       await VoiceRecorder.startRecording();
     } else {
       this.stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -37,13 +37,13 @@ export class Audio {
       if (!base64) throw new Error('Failed to get recording data');
       const audioBlob = this.base64ToBlob(base64, 'audio/wav');
       this.setLastUrl(audioBlob);
-      return await this.sendToWhisper(audioBlob);
+      return await this.sendToOpenAI(audioBlob);
     } else {
       return new Promise(resolve => {
         this.mediaRecorder.onstop = async () => {
           const audioBlob = new Blob(this.chunks, { type: 'audio/webm' });
           this.setLastUrl(audioBlob);
-          const text = await this.sendToWhisper(audioBlob);
+          const text = await this.sendToOpenAI(audioBlob);
           resolve(text);
         };
         this.mediaRecorder.stop();
@@ -66,12 +66,12 @@ export class Audio {
     } catch {}
   }
 
-  private async sendToWhisper(audioBlob: Blob): Promise<string> {
+  private async sendToOpenAI(audioBlob: Blob): Promise<string> {
     const formData = new FormData();
-    formData.append('file', audioBlob, 'recitation.webm');
+    const filename = audioBlob.type.includes('wav') ? 'recitation.wav' : 'recitation.webm';
+    formData.append('file', audioBlob, filename);
     formData.append('model', 'whisper-1');
     formData.append('language', 'ar');
-    formData.append('max_tokens', '50');
 
     const res = await fetch('https://api.openai.com/v1/audio/transcriptions', {
       method: 'POST',

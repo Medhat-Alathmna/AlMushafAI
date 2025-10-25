@@ -1,6 +1,4 @@
-﻿
-
-<ion-header>
+﻿<ion-header>
   <ion-toolbar color="light">
     <ion-buttons slot="start">
       <ion-menu-button autoHide="true"></ion-menu-button>
@@ -18,30 +16,18 @@
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
-  
+
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-text-center mushaf-content" id="mushafContent">
   <ng-container *ngIf="viewMode === 'image'; else textView">
-    <swiper-container
-      [modules]="[Navigation, Pagination, Zoom, Keyboard]"
-      [navigation]="true"
-      [pagination]="{ clickable: true }"
-      [zoom]="true"
-      [keyboard]="{ enabled: true }"
-      [direction]="'horizontal'"
-      dir="rtl"
-      class="mushaf-swiper"
-      (slideChange)="onSlideChange($event)"
-    >
+    <swiper-container [modules]="[Navigation, Pagination, Zoom, Keyboard]" [navigation]="true"
+      [pagination]="{ clickable: true }" [zoom]="true" [keyboard]="{ enabled: true }" [direction]="'horizontal'"
+      dir="rtl" class="mushaf-swiper" (slideChange)="onSlideChange($event)">
       <swiper-slide *ngFor="let page of pages; let i = index; trackBy: trackByIndex">
         <ion-card class="mushaf-page">
           <ion-card-content>
-            <ion-img
-              [src]="getImageSrc(page)"
-              [alt]="('page' | translate) + ' ' + page"
-              class="page-img"
-            ></ion-img>
+            <ion-img [src]="getImageSrc(page)" [alt]="('page' | translate) + ' ' + page" class="page-img"></ion-img>
           </ion-card-content>
         </ion-card>
       </swiper-slide>
@@ -49,25 +35,23 @@
 
     <ion-footer class="page-footer">
       <ion-toolbar color="light">
-        <ion-title size="small">{{ 'page_x_of_y' | translate: { x: (currentPage + startPage - 1), y: endPage } }}</ion-title>
+        <ion-title size="small">{{ 'page_x_of_y' | translate: { x: (currentPage + startPage - 1), y: endPage }
+          }}</ion-title>
       </ion-toolbar>
     </ion-footer>
   </ng-container>
 
   <ng-template #textView>
-    <swiper-container
-      [modules]="[Navigation, Pagination, Keyboard]"
-      [pagination]="{ clickable: true }"
-      [keyboard]="{ enabled: true }"
-      dir="rtl"
-      class="mushaf-swiper text-swiper"
-    >
+    <swiper-container [modules]="[Navigation, Pagination, Keyboard]" [pagination]="{ clickable: true }"
+      [keyboard]="{ enabled: true }" dir="rtl" class="mushaf-swiper text-swiper"
+      (slideChange)="onTextSlideChange($event)">
       <swiper-slide *ngFor="let tp of textPages; let i = index; trackBy: trackByIndex">
         <div class="mushaf-text" dir="rtl">
           <p class="basmala" *ngIf="showBasmala && i === 0">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
           <p class="quran-paragraph">
-            <span class="ayah" *ngFor="let a of tp.ayat">
-              <span class="ayah-text">{{ a.text }}</span>
+            <span class="ayah" *ngFor="let a of tp.ayat" [class.ayah-active]="isActiveAyah(a.index)"
+              (click)="setActiveAyah(a.index)">
+              <span class="ayah-text" [class.ayah-error]="isMistake(a.index)">{{ a.text }}</span>
               <span class="ayah-num" [attr.data-n]="a.index"></span>
             </span>
           </p>
@@ -87,8 +71,8 @@
       <ion-fab-button color="warning" (click)="onStop()">
         <ion-icon name="square"></ion-icon>
       </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
+      <ion-fab-button color="success" (click)="onAyahComplete()"> <ion-icon name="checkmark-done-outline"></ion-icon>
+      </ion-fab-button> </ion-fab-list> </ion-fab>
 
 </ion-content>
 
@@ -107,7 +91,7 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  
+
 </ion-footer>
 
 <!-- Reusable modal component -->

@@ -207,6 +207,7 @@ ion-img {
 
 /* نص الآية نفسه */
 .ayah-text {
+  color: black;
   font-size: clamp(20px, 3.2vw, 28px);
   line-height: 2.4;
   word-break: keep-all;
@@ -299,3 +300,11 @@ ion-fab-button[color="danger"] {
   70% { box-shadow: 0 0 0 12px rgba(255, 0, 0, 0); }
   100% { box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
 }
+
+.ayah-text.ayah-error {
+  color: #c62828 !important;
+  font-weight: 700;
+}
+
+.ayah.ayah-active .ayah-text { background: linear-gradient(180deg, rgba(94, 90, 71, 0.55), rgba(245,233,185,0)); border-radius: 6px; }
+.ayah-text.ayah-error { color: #c62828 !important; font-weight: 700; }

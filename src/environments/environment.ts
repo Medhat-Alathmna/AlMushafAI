@@ -1,10 +1,10 @@
-// This file can be replaced during build by using the `fileReplacements` array.
+﻿// This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
   production: false,
-  openaiApiKey: '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'
+  openaiApiKey:'../secret/opeanai.txt'
 
 };
 
