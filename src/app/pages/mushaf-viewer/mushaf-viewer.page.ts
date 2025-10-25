@@ -5,19 +5,20 @@ import { ActivatedRoute } from '@angular/router';
 import { Navigation, Pagination, Zoom, Keyboard } from 'swiper/modules';
 
 import { ActionModalComponent } from 'src/app/components/action-modal/action-modal.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Audio as AudioService } from 'src/app/services/audio.service';
 import { Ai } from 'src/app/services/ai.service';
 import { AlertController } from '@ionic/angular';
 import { QuranService } from 'src/app/services/quran..service';
 import { addIcons } from 'ionicons';
-import { readerOutline,bookOutline, optionsOutline, bookmarkOutline, informationCircleOutline, playOutline, squareOutline, stopOutline, micOutline } from 'ionicons/icons';
+import { readerOutline, bookOutline, optionsOutline, bookmarkOutline, informationCircleOutline, chevronBackOutline, libraryOutline, play, square, stop, mic } from 'ionicons/icons';
 @Component({
   standalone: true,
   selector: 'app-mushaf-viewer',
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './mushaf-viewer.page.html',
   styleUrls: ['./mushaf-viewer.page.scss'],
-  imports: [IonicModule, CommonModule, ActionModalComponent],
+  imports: [IonicModule, CommonModule, ActionModalComponent, TranslateModule],
 })
 export class MushafViewerPage implements OnInit {
   pages: string[] = [];
@@ -43,8 +44,8 @@ constructor(
   private ai: Ai,
   private alertCtrl: AlertController,
   private audio: AudioService
-) {
-  addIcons({ readerOutline, bookOutline, playOutline, squareOutline, optionsOutline, bookmarkOutline, informationCircleOutline, stopOutline, micOutline });
+ ,) {
+  addIcons({ readerOutline, bookOutline, optionsOutline, bookmarkOutline, informationCircleOutline, chevronBackOutline, libraryOutline, play, square, stop, mic });
 }
   private AYAT_PER_PAGE = 12; 
 textPages: { ayat: { index: string; text: string }[] }[] = [];
@@ -210,4 +211,6 @@ private splitAyatIntoPages() {
       this.isRecording = false;
     }
   }
+
+
 }

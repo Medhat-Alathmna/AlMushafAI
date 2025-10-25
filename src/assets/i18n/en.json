@@ -1,0 +1,16 @@
+﻿{
+    "surah_list":  "Surah List",
+    "mushaf_viewer":  "Mushaf Viewer",
+    "images":  "Images",
+    "text":  "Text",
+    "meccan":  "Meccan",
+    "medinan":  "Medinan",
+    "verses_count":  "{{count}} verses",
+    "page":  "Page",
+    "page_x_of_y":  "Page {{x}} / {{y}}",
+    "settings":  "Settings",
+    "bookmark":  "Bookmark",
+    "info":  "Info",
+    "close":  "Close",
+    "language":  "Language"
+}

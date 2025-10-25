@@ -1,29 +1,31 @@
+
 <ion-header>
   <ion-toolbar color="light">
-    <ion-title class="ion-text-center">قائمة السور</ion-title>
+    <ion-title class="ion-text-center">{{ 'surah_list' | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding" [fullscreen]="true">
   <ion-list lines="none">
-    <ion-item button detail="true" *ngFor="let surah of surahs; trackBy: trackById"
-      [routerLink]="['/mushaf-viewer', surah.index]" class="surah-item">
+    <ion-item
+      button
+      detail="true"
+      *ngFor="let surah of surahs; trackBy: trackById"
+      [routerLink]="['/mushaf-viewer', surah.index]"
+      class="surah-item"
+    >
       <div slot="start" class="num-circle">{{ surah.index }}</div>
 
       <ion-label>
         <h2 class="quran-title">{{ surah.titleAr || surah.title }}</h2>
         <div class="meta-row">
-          <!-- <ion-chip color="warning" outline>
-            <ion-icon name="bookmark-outline"></ion-icon>
-            <ion-label>{{ surah.place === 'Mecca' ? 'مكية' : 'مدنية' }}</ion-label>
-          </ion-chip> -->
           <ion-chip color="tertiary" outline>
             <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
-            <ion-label>{{ surah.count }} آية</ion-label>
+            <ion-label>{{ 'verses_count' | translate: { count: surah.count } }}</ion-label>
           </ion-chip>
           <ion-chip color="medium" outline>
             <ion-icon name="book-outline"></ion-icon>
-            <ion-label>{{ surah.type === 'Makkiyah' ? 'مكيّة' : 'مدنيّة' }}</ion-label>
+            <ion-label>{{ surah.place === 'Mecca' ? ('meccan' | translate) : ('medinan' | translate) }}</ion-label>
           </ion-chip>
         </div>
       </ion-label>
@@ -32,3 +34,4 @@
     </ion-item>
   </ion-list>
 </ion-content>
+

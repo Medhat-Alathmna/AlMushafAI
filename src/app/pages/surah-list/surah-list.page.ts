@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { QuranService } from 'src/app/services/quran..service';
+import { TranslateModule } from '@ngx-translate/core';
 import { addIcons } from 'ionicons';
 import { libraryOutline ,bookOutline,chevronBackOutline} from 'ionicons/icons';
 @Component({
@@ -10,7 +11,7 @@ import { libraryOutline ,bookOutline,chevronBackOutline} from 'ionicons/icons';
   standalone: true,
   templateUrl: './surah-list.page.html',
   styleUrls: ['./surah-list.page.scss'],
-  imports: [IonicModule, CommonModule, RouterModule],
+  imports: [IonicModule, CommonModule, RouterModule, TranslateModule],
 })
 export class SurahListPage implements OnInit {
   surahs: any[] = [];
@@ -27,3 +28,4 @@ export class SurahListPage implements OnInit {
     return s.index;
   }
 }
+

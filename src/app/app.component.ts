@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 
 @Component({
@@ -7,5 +8,10 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
   imports: [IonApp, IonRouterOutlet],
 })
 export class AppComponent {
-  constructor() {}
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+    const saved = localStorage.getItem('lang');
+    this.translate.use(saved || 'en');
+  }
 }
+

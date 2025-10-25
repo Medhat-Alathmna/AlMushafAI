@@ -1,24 +1,27 @@
-﻿<ion-header>
+﻿
+
+<ion-header>
   <ion-toolbar color="light">
     <ion-buttons slot="start">
+      <ion-menu-button autoHide="true"></ion-menu-button>
       <ion-back-button defaultHref="/surah-list"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{ surahName || 'Ø¹Ø§Ø±Ø¶ Ø§Ù„Ù…ØµØ­Ù' }}</ion-title>
+    <ion-title>{{ surahName || ('mushaf_viewer' | translate) }}</ion-title>
     <ion-segment class="view-toggle" [value]="viewMode" (ionChange)="onModeChange($event)" slot="end" dir="rtl">
       <ion-segment-button value="image">
         <ion-icon name="book-outline"></ion-icon>
-        <ion-label>صورة</ion-label>
+        <ion-label>{{ 'images' | translate }}</ion-label>
       </ion-segment-button>
       <ion-segment-button value="text">
         <ion-icon name="reader-outline"></ion-icon>
-        <ion-label>نص</ion-label>
+        <ion-label>{{ 'text' | translate }}</ion-label>
       </ion-segment-button>
     </ion-segment>
   </ion-toolbar>
   
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-text-center mushaf-content">
+<ion-content [fullscreen]="true" class="ion-text-center mushaf-content" id="mushafContent">
   <ng-container *ngIf="viewMode === 'image'; else textView">
     <swiper-container
       [modules]="[Navigation, Pagination, Zoom, Keyboard]"
@@ -36,7 +39,7 @@
           <ion-card-content>
             <ion-img
               [src]="getImageSrc(page)"
-              alt="الصفحة {{ page }}"
+              [alt]="('page' | translate) + ' ' + page"
               class="page-img"
             ></ion-img>
           </ion-card-content>
@@ -46,56 +49,52 @@
 
     <ion-footer class="page-footer">
       <ion-toolbar color="light">
-        <ion-title size="small">
-          الصفحة {{ currentPage + startPage - 1 }} / {{ endPage }}
-        </ion-title>
+        <ion-title size="small">{{ 'page_x_of_y' | translate: { x: (currentPage + startPage - 1), y: endPage } }}</ion-title>
       </ion-toolbar>
     </ion-footer>
   </ng-container>
 
-<ng-template #textView>
-  <swiper-container
-    [modules]="[Navigation, Pagination, Keyboard]"
-    [pagination]="{ clickable: true }"
-    [keyboard]="{ enabled: true }"
-    dir="rtl"
-    class="mushaf-swiper text-swiper"
-  >
-    <swiper-slide *ngFor="let tp of textPages; let i = index; trackBy: trackByIndex">
-      <div class="mushaf-text" dir="rtl">
-        <!-- <div class="surah-head">
-          <div class="surah-name">{{ surahName }}</div>
-        </div> -->
-        <p class="basmala" *ngIf="showBasmala && i === 0">﷽</p>
-        <p class="quran-paragraph">
-          <span class="ayah" *ngFor="let a of tp.ayat">
-            <span class="ayah-text" style="color: black;">{{ a.text }}</span>
-            <span class="ayah-num" [attr.data-n]="a.index"></span>
-          </span>
-        </p>
-      </div>
-    </swiper-slide>
-  </swiper-container>
-</ng-template>
-
+  <ng-template #textView>
+    <swiper-container
+      [modules]="[Navigation, Pagination, Keyboard]"
+      [pagination]="{ clickable: true }"
+      [keyboard]="{ enabled: true }"
+      dir="rtl"
+      class="mushaf-swiper text-swiper"
+    >
+      <swiper-slide *ngFor="let tp of textPages; let i = index; trackBy: trackByIndex">
+        <div class="mushaf-text" dir="rtl">
+          <p class="basmala" *ngIf="showBasmala && i === 0">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+          <p class="quran-paragraph">
+            <span class="ayah" *ngFor="let a of tp.ayat">
+              <span class="ayah-text">{{ a.text }}</span>
+              <span class="ayah-num" [attr.data-n]="a.index"></span>
+            </span>
+          </p>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </ng-template>
 
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
     <ion-fab-button [color]="isRecording ? 'danger' : 'primary'" (click)="onRecordToggle()">
-      <ion-icon [name]="isRecording ? 'stop-outline' : 'mic-outline'"></ion-icon>
+      <ion-icon [name]="isRecording ? 'stop' : 'mic'"></ion-icon>
     </ion-fab-button>
     <ion-fab-list side="top">
       <ion-fab-button color="medium" (click)="onPlay()">
-        <ion-icon name="play-outline"></ion-icon>
+        <ion-icon name="play"></ion-icon>
       </ion-fab-button>
       <ion-fab-button color="warning" (click)="onStop()">
-        <ion-icon name="square-outline"></ion-icon>
+        <ion-icon name="square"></ion-icon>
       </ion-fab-button>
     </ion-fab-list>
-  </ion-fab></ion-content>
+  </ion-fab>
+
+</ion-content>
 
 <!-- Global actions footer with modern icons -->
 <ion-footer class="actions-footer">
-  <ion-toolbar style="direction: rtl;">
+  <ion-toolbar>
     <ion-buttons slot="primary">
       <ion-button fill="clear" (click)="openModal('settings')">
         <ion-icon name="options-outline"></ion-icon>
@@ -108,6 +107,7 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
+  
 </ion-footer>
 
 <!-- Reusable modal component -->
@@ -116,9 +116,3 @@
     <app-action-modal [title]="modalTitle" [body]="modalBody" (dismiss)="isModalOpen=false"></app-action-modal>
   </ng-template>
 </ion-modal>
-
-
-
-
-
-
