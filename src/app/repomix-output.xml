@@ -1,0 +1,1283 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+app.component.html
+app.component.spec.ts
+app.component.ts
+app.routes.ts
+components/audio-player/audio-player.component.html
+components/audio-player/audio-player.component.spec.ts
+components/audio-player/audio-player.component.ts
+components/ayah-highlight/ayah-highlight.component.html
+components/ayah-highlight/ayah-highlight.component.spec.ts
+components/ayah-highlight/ayah-highlight.component.ts
+home/home.page.html
+home/home.page.scss
+home/home.page.spec.ts
+home/home.page.ts
+pages/ai-reader/ai-reader.page.html
+pages/ai-reader/ai-reader.page.spec.ts
+pages/ai-reader/ai-reader.page.ts
+pages/mushaf-viewer/mushaf-viewer.page.html
+pages/mushaf-viewer/mushaf-viewer.page.scss
+pages/mushaf-viewer/mushaf-viewer.page.spec.ts
+pages/mushaf-viewer/mushaf-viewer.page.ts
+pages/settings/settings.page.html
+pages/settings/settings.page.spec.ts
+pages/settings/settings.page.ts
+pages/surah-list/surah-list.page.html
+pages/surah-list/surah-list.page.scss
+pages/surah-list/surah-list.page.spec.ts
+pages/surah-list/surah-list.page.ts
+services/ai.spec.ts
+services/ai.ts
+services/audio.spec.ts
+services/audio.ts
+services/quran..service.ts
+services/quran.spec.ts
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="app.component.html">
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+</file>
+
+<file path="app.component.spec.ts">
+import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
+import { AppComponent } from './app.component';
+
+describe('AppComponent', () => {
+  it('should create the app', async () => {
+    await TestBed.configureTestingModule({
+      imports: [AppComponent],
+      providers: [provideRouter([])]
+    }).compileComponents();
+    
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+});
+</file>
+
+<file path="app.component.ts">
+import { Component } from '@angular/core';
+import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  imports: [IonApp, IonRouterOutlet],
+})
+export class AppComponent {
+  constructor() {}
+}
+</file>
+
+<file path="app.routes.ts">
+import { Routes } from '@angular/router';
+
+export const routes: Routes = [
+  { path: '', redirectTo: 'surah-list', pathMatch: 'full' },
+  {
+    path: 'surah-list',
+    loadComponent: () =>
+      import('./pages/surah-list/surah-list.page').then(m => m.SurahListPage),
+  },
+  {
+    path: 'mushaf-viewer/:id',
+    loadComponent: () =>
+      import('./pages/mushaf-viewer/mushaf-viewer.page').then(m => m.MushafViewerPage),
+  },
+];
+</file>
+
+<file path="components/audio-player/audio-player.component.html">
+<p>
+  audio-player works!
+</p>
+</file>
+
+<file path="components/audio-player/audio-player.component.spec.ts">
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+
+import { AudioPlayerComponent } from './audio-player.component';
+
+describe('AudioPlayerComponent', () => {
+  let component: AudioPlayerComponent;
+  let fixture: ComponentFixture<AudioPlayerComponent>;
+
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [AudioPlayerComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(AudioPlayerComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  }));
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</file>
+
+<file path="components/audio-player/audio-player.component.ts">
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-audio-player',
+  templateUrl: './audio-player.component.html',
+  styleUrls: ['./audio-player.component.scss'],
+  standalone: true,
+})
+export class AudioPlayerComponent  implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {}
+
+}
+</file>
+
+<file path="components/ayah-highlight/ayah-highlight.component.html">
+<p>
+  ayah-highlight works!
+</p>
+</file>
+
+<file path="components/ayah-highlight/ayah-highlight.component.spec.ts">
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+
+import { AyahHighlightComponent } from './ayah-highlight.component';
+
+describe('AyahHighlightComponent', () => {
+  let component: AyahHighlightComponent;
+  let fixture: ComponentFixture<AyahHighlightComponent>;
+
+  beforeEach(waitForAsync(() => {
+    TestBed.configureTestingModule({
+      imports: [AyahHighlightComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(AyahHighlightComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  }));
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</file>
+
+<file path="components/ayah-highlight/ayah-highlight.component.ts">
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-ayah-highlight',
+  templateUrl: './ayah-highlight.component.html',
+  styleUrls: ['./ayah-highlight.component.scss'],
+  standalone: true,
+})
+export class AyahHighlightComponent  implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {}
+
+}
+</file>
+
+<file path="home/home.page.html">
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Ready to create an app?</strong>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div>
+</ion-content>
+</file>
+
+<file path="home/home.page.scss">
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+</file>
+
+<file path="home/home.page.spec.ts">
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { HomePage } from './home.page';
+
+describe('HomePage', () => {
+  let component: HomePage;
+  let fixture: ComponentFixture<HomePage>;
+
+  beforeEach(async () => {
+    fixture = TestBed.createComponent(HomePage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</file>
+
+<file path="home/home.page.ts">
+import { Component } from '@angular/core';
+import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular/standalone';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
+  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
+})
+export class HomePage {
+  constructor() {}
+}
+</file>
+
+<file path="pages/ai-reader/ai-reader.page.html">
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ai-reader</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ai-reader</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+</file>
+
+<file path="pages/ai-reader/ai-reader.page.spec.ts">
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AiReaderPage } from './ai-reader.page';
+
+describe('AiReaderPage', () => {
+  let component: AiReaderPage;
+  let fixture: ComponentFixture<AiReaderPage>;
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AiReaderPage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</file>
+
+<file path="pages/ai-reader/ai-reader.page.ts">
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+
+@Component({
+  selector: 'app-ai-reader',
+  templateUrl: './ai-reader.page.html',
+  styleUrls: ['./ai-reader.page.scss'],
+  standalone: true,
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+})
+export class AiReaderPage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+</file>
+
+<file path="pages/mushaf-viewer/mushaf-viewer.page.html">
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/surah-list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ surahName || 'Ø¹Ø§Ø±Ø¶ Ø§Ù„Ù…ØµØ­Ù' }}</ion-title>
+    <ion-segment class="view-toggle" [value]="viewMode" (ionChange)="onModeChange($event)" slot="end" dir="rtl">
+      <ion-segment-button value="image">
+        <ion-icon name="book-outline"></ion-icon>
+        <ion-label>ØµÙˆØ±</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="text">
+        <ion-icon name="reader-outline"></ion-icon>
+        <ion-label>Ù†Øµ</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-text-center mushaf-content">
+  <ng-container *ngIf="viewMode === 'image'; else textView">
+    <swiper-container
+      [modules]="[Navigation, Pagination, Zoom, Keyboard]"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+      [zoom]="true"
+      [keyboard]="{ enabled: true }"
+      [direction]="'horizontal'"
+      dir="rtl"
+      class="mushaf-swiper"
+      (slideChange)="onSlideChange($event)"
+    >
+      <swiper-slide *ngFor="let page of pages; let i = index; trackBy: trackByIndex">
+        <ion-card class="mushaf-page">
+          <ion-card-content>
+            <ion-img
+              [src]="getImageSrc(page)"
+              alt="Ø§Ù„ØµÙØ­Ø© {{ page }}"
+              class="page-img"
+            ></ion-img>
+          </ion-card-content>
+        </ion-card>
+      </swiper-slide>
+    </swiper-container>
+
+    <ion-footer class="page-footer">
+      <ion-toolbar color="light">
+        <ion-title size="small">
+          Ø§Ù„ØµÙØ­Ø© {{ currentPage + startPage - 1 }} / {{ endPage }}
+        </ion-title>
+      </ion-toolbar>
+    </ion-footer>
+  </ng-container>
+
+<ng-template #textView>
+  <swiper-container
+    [modules]="[Navigation, Pagination, Keyboard]"
+    [pagination]="{ clickable: true }"
+    [keyboard]="{ enabled: true }"
+    dir="rtl"
+    class="mushaf-swiper text-swiper"
+  >
+    <swiper-slide *ngFor="let tp of textPages; let i = index; trackBy: trackByIndex">
+      <div class="mushaf-text" dir="rtl">
+        <!-- <div class="surah-head">
+          <div class="surah-name">{{ surahName }}</div>
+        </div> -->
+        <p class="basmala" *ngIf="showBasmala && i === 0">﷽</p>
+        <p class="quran-paragraph">
+          <span class="ayah" *ngFor="let a of tp.ayat">
+            <span class="ayah-text" style="color: black;">{{ a.text }}</span>
+            <span class="ayah-num" [attr.data-n]="a.index"></span>
+          </span>
+        </p>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+</ng-template>
+
+
+</ion-content>
+</file>
+
+<file path="pages/mushaf-viewer/mushaf-viewer.page.scss">
+.mushaf-content {
+  --background: radial-gradient(circle, #fdfbf3, #f6f2e6);
+}
+
+.mushaf-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+ion-card {
+  border: 4px double #d4af37;
+  border-radius: 14px;
+  margin: 8px;
+  background: #fffef9;
+  box-shadow:
+    0 0 0 3px #c9a961,
+    inset 0 0 10px rgba(212, 175, 55, 0.3),
+    0 4px 20px rgba(180, 140, 60, 0.2);
+}
+
+ion-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.page-footer {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b2f17;
+  background: #f8f5e4;
+  border-top: 2px solid #d4af37;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #c9a961;
+  text-shadow: 0 0 5px #f8e99b;
+}
+
+.view-toggle {
+  max-width: 220px;
+}
+
+.quran-text-container {
+  padding: 16px;
+  text-align: right;
+  direction: rtl;
+}
+
+.quran-text-container .ayah {
+  font-family: 'Amiri', serif;
+  font-size: 26px;
+  line-height: 2.1;
+  margin: 0 0 12px;
+  color: #281b0a;
+}
+
+.ayah-number {
+  display: inline-block;
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background: #f1e6c0;
+  color: #3b2f17;
+  border: 1px solid #d4af37;
+  text-align: center;
+  margin-left: 8px; /* on RTL, this spaces the circle from text */
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+/* New inline-flow text layout to mimic mushaf-style inline ayat */
+.quran-text-flow {
+  direction: rtl;
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 14px;
+  padding: 16px;
+}
+
+.ayah-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Amiri', serif;
+  font-size: 26px;
+  line-height: 2.1;
+  color: #281b0a;
+  background: #fffaf0;
+  border: 1px solid #e5d2a6;
+  border-radius: 12px;
+  padding: 6px 10px;
+}
+
+.ayah-chip .ayah-marker {
+  min-width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 50%;
+  background: #f1e6c0;
+  color: #3b2f17;
+  border: 1px solid #d4af37;
+  text-align: center;
+  font-size: 14px;
+}
+/* Refine textual view: no borders per ayah, justified inline flow */
+.quran-text-flow {
+  direction: rtl;
+  text-align: justify;
+  text-justify: inter-word;
+  -ms-text-justify: inter-word;
+  display: block;
+  line-height: 2.1;
+  padding: 16px;
+}
+.quran-text-flow::after { content: ""; display: inline-block; width: 100%; }
+
+.ayah-chip {
+  display: inline;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 .25em;
+  font-family: 'Amiri', serif;
+  font-size: 26px;
+  color: #281b0a;
+}
+
+.ayah-chip .ayah-text { white-space: normal; }
+
+.ayah-chip .ayah-marker {
+  background: transparent !important;
+  border: none !important;
+  color: #b58b2a; /* subtle gold */
+  font-size: 20px;
+  vertical-align: baseline;
+  margin: 0 .15em;
+}
+/* حاوية عامة للنص */
+.mushaf-text {
+  padding: 16px clamp(10px, 4vw, 24px);
+  color: #1f1407;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 2.4;
+  direction: rtl;
+  font-family: 'Amiri', serif;
+}
+
+/* ترويسة السورة بزخرفة ذهبية بسيطة */
+.surah-head {
+  margin: 6px auto 10px;
+  text-align: center;
+}
+.surah-name {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 2px solid #d4af37;
+  border-radius: 999px;
+  font-size: clamp(20px, 3.2vw, 28px);
+  letter-spacing: 0.3px;
+  background:
+    radial-gradient(ellipse at center, #fffdf6 0%, #fbf6e7 100%);
+  box-shadow:
+    0 0 0 3px #f3e6b6 inset,
+    0 1px 10px rgba(180, 140, 60, 0.18);
+}
+.surah-ornament {
+  height: 10px;
+  margin: 8px auto 0;
+  width: min(360px, 60%);
+  background:
+    linear-gradient(90deg,
+      transparent, #d4af37 15%, #b58b2a 50%, #d4af37 85%, transparent);
+  mask: radial-gradient(8px at 10% 50%, #000 98%, transparent) repeat-x;
+  mask-size: 24px 100%;
+  opacity: .65;
+}
+
+/* البسملة بخط أكبر وتمركز جميل */
+.basmala {
+  text-align: center;
+  font-size: clamp(22px, 3.6vw, 30px);
+  margin: 10px 0 14px;
+  color: #6f5520;
+  letter-spacing: 0.5px;
+}
+
+/* فقرة القرآن: نستخدم عناصر inline لكل آية مع فاصل رقمي مزخرف */
+.quran-paragraph {
+  margin: 0; /* فقرة واحدة متصلة */
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* كل آية عنصر inline حتى تبقى متماسكة مع التبرير */
+.ayah {
+  display: inline;
+  white-space: normal;
+}
+
+/* نص الآية نفسه */
+.ayah-text {
+  font-size: clamp(20px, 3.2vw, 28px);
+  line-height: 2.4;
+  word-break: keep-all;
+}
+
+/* رقم الآية — نُخرجه بمحتوى مولّد: ﴿n﴾ */
+.ayah-num {
+  display: inline-block;
+  vertical-align: baseline;
+  margin: 0 .15em 0 .25em;
+  position: relative;
+  top: -0.05em; /* محاذاة خفيفة */
+}
+.ayah-num::before {
+  content: "﴿" attr(data-n) "﴾";
+  font-size: clamp(15px, 2.4vw, 20px);
+  color: #b58b2a;
+  letter-spacing: 0;
+}
+
+/* تباعد لطيف بين الآيات */
+.ayah + .ayah::before {
+  content: " ";
+}
+
+/* حالة تفعيل/تمييز آية (مثلاً عند النقر/الاستماع) */
+.ayah.active .ayah-text,
+.ayah:hover .ayah-text {
+  background: linear-gradient(180deg, rgba(245, 233, 185, .55), rgba(245, 233, 185, 0));
+  border-radius: 6px;
+}
+
+/* وضع داكن (اختياري) */
+@media (prefers-color-scheme: dark) {
+  .mushaf-text { color: #e8dec8; }
+  .surah-name { border-color: #caa84a; background: radial-gradient(ellipse, #2a241a, #1b160f); box-shadow: 0 0 0 3px #3a2e18 inset; }
+  .surah-ornament { opacity: .5; }
+  .basmala { color: #d5be7a; }
+  .ayah-num::before { color: #d1b25a; }
+  .ayah:hover .ayah-text,
+  .ayah.active .ayah-text {
+    background: linear-gradient(180deg, rgba(74, 60, 30, .55), rgba(74, 60, 30, 0));
+  }
+}
+@font-face {
+  font-family: 'Amiri';
+  src: url('/src/assets/fonts/AmiriQuran-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+.text-swiper {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, #fdfbf3, #f6f2e6);
+}
+.page-footer {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b2f17;
+  background: #f8f5e4;
+  border-top: 2px solid #d4af37;
+  padding: 4px 0;
+  margin-top: 10px;
+}
+</file>
+
+<file path="pages/mushaf-viewer/mushaf-viewer.page.spec.ts">
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MushafViewerPage } from './mushaf-viewer.page';
+
+describe('MushafViewerPage', () => {
+  let component: MushafViewerPage;
+  let fixture: ComponentFixture<MushafViewerPage>;
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(MushafViewerPage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</file>
+
+<file path="pages/mushaf-viewer/mushaf-viewer.page.ts">
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+import { Navigation, Pagination, Zoom, Keyboard } from 'swiper/modules';
+import { QuranService } from 'src/app/services/quran..service';
+
+@Component({
+  standalone: true,
+  selector: 'app-mushaf-viewer',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  templateUrl: './mushaf-viewer.page.html',
+  styleUrls: ['./mushaf-viewer.page.scss'],
+  imports: [IonicModule, CommonModule],
+})
+export class MushafViewerPage implements OnInit {
+  pages: string[] = [];
+  currentPage = 1;
+  totalPages = 604;
+showBasmala = true;
+  surahId!: number;
+  surahName = '';
+  startPage = 1;
+  endPage = 1;
+  viewMode: 'image' | 'text' = 'image';
+  ayat: { index: string; text: string }[] = [];
+
+  // Swiper modules
+  Navigation = Navigation;
+  Pagination = Pagination;
+  Zoom = Zoom;
+  Keyboard = Keyboard;
+
+  constructor(private route: ActivatedRoute, private quranService: QuranService) {}
+
+  private AYAT_PER_PAGE = 12; 
+textPages: { ayat: { index: string; text: string }[] }[] = [];
+
+async ngOnInit() {
+  this.surahId = Number(this.route.snapshot.paramMap.get('id'));
+  const surah: any = await this.quranService.getSurahByNumber(this.surahId);
+  if (surah) {
+    this.surahName = surah.titleAr || surah.title || surah.name || '';
+    this.ayat = Array.isArray(surah.ayat) ? surah.ayat : [];
+    this.showBasmala = this.surahId !== 9;
+  }
+
+  this.splitAyatIntoPages(); // 👈 تقسيم الآيات إلى صفحات
+  await this.loadAccuratePageRange();
+}
+
+// تقسيم الآيات إلى صفحات بدون كسر الآية
+private splitAyatIntoPages() {
+  const pages: any[] = [];
+  let currentPage: any[] = [];
+  let lengthCounter = 0;
+
+  for (const a of this.ayat) {
+    const textLength = a.text.length;
+
+    if (lengthCounter + textLength > 400 && currentPage.length > 0) {
+      // إذا تجاوزنا الحد التقريبي للطول نبدأ صفحة جديدة
+      pages.push({ ayat: currentPage });
+      currentPage = [];
+      lengthCounter = 0;
+    }
+
+    currentPage.push(a);
+    lengthCounter += textLength;
+  }
+
+  if (currentPage.length) pages.push({ ayat: currentPage });
+  this.textPages = pages;
+}
+
+  private async loadAccuratePageRange() {
+    try {
+      const res = await fetch('assets/quran-data/surah-list.json');
+      if (!res.ok) throw new Error('surah-list not found');
+      const list: any[] = await res.json();
+      const idx = this.surahId.toString().padStart(3, '0');
+
+      const sorted = list.slice().sort((a, b) => Number(a.index) - Number(b.index));
+      const currentIndex = sorted.findIndex((s) => s.index === idx);
+      const current = currentIndex >= 0 ? sorted[currentIndex] : null;
+      const next = currentIndex >= 0 ? sorted[currentIndex + 1] : null;
+
+      const start = Number((current as any)?.pageStart ?? (current as any)?.pages ?? 1);
+      const explicitEnd = (current as any)?.pageEnd;
+      const count = (current as any)?.pageCount;
+
+      let end: number;
+      if (explicitEnd != null) {
+        end = Number(explicitEnd);
+      } else if (count != null) {
+        end = start + Number(count) - 1;
+      } else if (next) {
+        end = Number((next as any)?.pageStart ?? (next as any)?.pages) - 1;
+      } else {
+        end = this.totalPages;
+      }
+
+      this.startPage = Math.max(1, Math.min(this.totalPages, start));
+      this.endPage = Math.max(this.startPage, Math.min(this.totalPages, end));
+
+      const length = Math.max(0, this.endPage - this.startPage + 1);
+      this.pages = Array.from({ length }, (_, i) => (this.startPage + i).toString().padStart(3, '0'));
+    } catch (e) {
+      // Fallback to at least one page
+      this.startPage = 1;
+      this.endPage = Math.min(this.startPage, this.totalPages);
+      this.pages = [this.startPage.toString().padStart(3, '0')];
+    }
+  }
+
+  onSlideChange(swiper: any) {
+    this.currentPage = swiper.activeIndex + 1;
+  }
+  getImageSrc(page: string | number): string {
+    const name = Number(page).toString().padStart(3, '0');
+    return `assets/quran-pages/${name}.png`;
+  }
+  trackByIndex(index: number) { return index; }
+
+  onModeChange(ev: any) {
+    this.viewMode = ev?.detail?.value === 'text' ? 'text' : 'image';
+  }
+}
+</file>
+
+<file path="pages/settings/settings.page.html">
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+</file>
+
+<file path="pages/settings/settings.page.spec.ts">
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { SettingsPage } from './settings.page';
+
+describe('SettingsPage', () => {
+  let component: SettingsPage;
+  let fixture: ComponentFixture<SettingsPage>;
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(SettingsPage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</file>
+
+<file path="pages/settings/settings.page.ts">
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
+
+@Component({
+  selector: 'app-settings',
+  templateUrl: './settings.page.html',
+  styleUrls: ['./settings.page.scss'],
+  standalone: true,
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+})
+export class SettingsPage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
+</file>
+
+<file path="pages/surah-list/surah-list.page.html">
+<ion-header>
+  <ion-toolbar color="light">
+    <ion-title class="ion-text-center">قائمة السور</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-list lines="none">
+    <ion-item
+      button
+      detail="true"
+      *ngFor="let surah of surahs; trackBy: trackById"
+      [routerLink]="['/mushaf-viewer', surah.index]"
+      class="surah-item"
+    >
+      <div slot="start" class="num-circle">{{ surah.index }}</div>
+
+      <ion-label>
+        <h2 class="quran-title">{{ surah.titleAr || surah.title }}</h2>
+        <div class="meta-row">
+          <!-- <ion-chip color="warning" outline>
+            <ion-icon name="bookmark-outline"></ion-icon>
+            <ion-label>{{ surah.place === 'Mecca' ? 'مكية' : 'مدنية' }}</ion-label>
+          </ion-chip> -->
+          <ion-chip color="tertiary" outline>
+            <ion-icon name="list-outline"></ion-icon>
+            <ion-label>{{ surah.count }} آية</ion-label>
+          </ion-chip>
+          <ion-chip color="medium" outline>
+            <!-- <ion-icon name="book-outline"></ion-icon> -->
+            <ion-label>{{ surah.type === 'Makkiyah' ? 'مكيّة' : 'مدنيّة' }}</ion-label>
+          </ion-chip>
+        </div>
+      </ion-label>
+
+      <ion-icon slot="end" name="chevron-back-outline" class="rtl-chevron" color="medium"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+</file>
+
+<file path="pages/surah-list/surah-list.page.scss">
+ion-content {
+  --background: linear-gradient(180deg, #fdfaf3, #f4efdf);
+}
+
+ion-item {
+  --background: #fffdf7;
+  margin: 6px 8px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+ion-badge {
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.surah-item {
+  align-items: flex-start;
+}
+
+.num-circle {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #f1e6c0;
+  border: 2px solid #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #3b2f17;
+}
+
+.quran-title {
+  font-family: 'Amiri', serif;
+  font-size: 24px;
+  margin: 2px 0 8px;
+  color: #1f1407;
+}
+
+.meta-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.rtl-chevron {
+  transform: rotateY(180deg);
+}
+</file>
+
+<file path="pages/surah-list/surah-list.page.spec.ts">
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { SurahListPage } from './surah-list.page';
+
+describe('SurahListPage', () => {
+  let component: SurahListPage;
+  let fixture: ComponentFixture<SurahListPage>;
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(SurahListPage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
+</file>
+
+<file path="pages/surah-list/surah-list.page.ts">
+import { Component, OnInit } from '@angular/core';
+import { IonicModule } from '@ionic/angular';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { QuranService } from 'src/app/services/quran..service';
+
+@Component({
+  selector: 'app-surah-list',
+  standalone: true,
+  templateUrl: './surah-list.page.html',
+  styleUrls: ['./surah-list.page.scss'],
+  imports: [IonicModule, CommonModule, RouterModule],
+})
+export class SurahListPage implements OnInit {
+  surahs: any[] = [];
+
+  constructor(private quranService: QuranService) {}
+
+  async ngOnInit() {
+    this.surahs = await this.quranService.getAllSurahs();
+  }
+
+  trackById(_: number, s: any) {
+    return s.index;
+  }
+}
+</file>
+
+<file path="services/ai.spec.ts">
+import { TestBed } from '@angular/core/testing';
+
+import { Ai } from './ai';
+
+describe('Ai', () => {
+  let service: Ai;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(Ai);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});
+</file>
+
+<file path="services/ai.ts">
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class Ai {
+  
+}
+</file>
+
+<file path="services/audio.spec.ts">
+import { TestBed } from '@angular/core/testing';
+
+import { Audio } from './audio';
+
+describe('Audio', () => {
+  let service: Audio;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(Audio);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});
+</file>
+
+<file path="services/audio.ts">
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class Audio {
+  
+}
+</file>
+
+<file path="services/quran..service.ts">
+import { Injectable } from '@angular/core';
+
+type SurahMeta = {
+  index: number;
+  title: string;
+  titleAr?: string;
+  place?: string;
+  type?: string;
+  count: number;
+  pages: number; // start page
+};
+
+type Ayah = { index: string; text: string };
+
+type SurahFile = {
+  index: string | number;
+  name?: string;
+  title?: string;
+  titleAr?: string;
+  ayat?: Ayah[];
+  pages?: string | number;
+};
+
+@Injectable({ providedIn: 'root' })
+export class QuranService {
+  private readonly SURAH_DIR = 'assets/quran-data';
+  private cacheMeta: SurahMeta[] = [];
+  private cacheSurahs: Map<number, SurahFile> = new Map();
+
+  // Load consolidated metadata if available; fallback to per-file probing
+  async getAllSurahs(): Promise<SurahMeta[]> {
+    if (this.cacheMeta.length) return this.cacheMeta;
+
+    try {
+      const res = await fetch(`${this.SURAH_DIR}/surah-list.json`);
+      if (res.ok) {
+        const list = await res.json();
+        const mapped: SurahMeta[] = (Array.isArray(list) ? list : []).map((d: any) => ({
+          index: Number(d.index),
+          title: d.title ?? '',
+          // tolerate common misspellings/casing for Arabic title
+          titleAr: d.titleAr ?? d.titlarAR ?? d.titlarAr ?? d.titleAR ?? d.TitleAr ?? '',
+          type: d.type ?? '',
+          place: d.place ?? '',
+          count: Number(d.count ?? 0),
+          // start page can be in pages or pageStart
+          pages: Number(d.pageStart ?? d.pages ?? 1),
+        }));
+        this.cacheMeta = mapped.sort((a, b) => a.index - b.index);
+        if (this.cacheMeta.length) return this.cacheMeta;
+      }
+    } catch {
+      // ignore and proceed to fallback
+    }
+
+    const ids = Array.from({ length: 114 }, (_, i) => i + 1);
+    const results = await Promise.all(
+      ids.map(async (id) => {
+        const file = id.toString().padStart(3, '0');
+        try {
+          const res = await fetch(`${this.SURAH_DIR}/${file}.json`);
+          if (!res.ok) throw new Error(res.statusText);
+          const data: any = await res.json();
+          return {
+            index: Number(data.index ?? id),
+            title: data.title ?? '',
+            titleAr: data.titleAr ?? data.name ?? '',
+            type: data.type ?? '',
+            place: data.place ?? '',
+            count: Number(data.count ?? (data.ayat?.length ?? 0)),
+            pages: Number(data.pages ?? 1),
+          } as SurahMeta;
+        } catch {
+          return null;
+        }
+      })
+    );
+
+    this.cacheMeta = results.filter((x): x is SurahMeta => x !== null);
+    return this.cacheMeta;
+  }
+
+  // Load a single surah file by number
+  async getSurahByNumber(id: number): Promise<SurahFile | null> {
+    if (this.cacheSurahs.has(id)) return this.cacheSurahs.get(id)!;
+    const file = id.toString().padStart(3, '0');
+    try {
+      const res = await fetch(`${this.SURAH_DIR}/${file}.json`);
+      if (!res.ok) throw new Error(res.statusText);
+      const data = (await res.json()) as SurahFile;
+      this.cacheSurahs.set(id, data);
+      return data;
+    } catch {
+      console.error('Failed to load surah file', file);
+      return null;
+    }
+  }
+  
+}
+</file>
+
+<file path="services/quran.spec.ts">
+import { TestBed } from '@angular/core/testing';
+
+import { Quran } from './quran..service';
+
+describe('Quran', () => {
+  let service: Quran;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(Quran);
+  });
+
+  it('should be created', () => {
+    expect(service).toBeTruthy();
+  });
+});
+</file>
+
+</files>

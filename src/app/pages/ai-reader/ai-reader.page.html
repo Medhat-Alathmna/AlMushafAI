@@ -1,13 +1,46 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>ai-reader</ion-title>
+    <ion-title>مقارنة التلاوة</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">ai-reader</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>سجل تلاوتك</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-button expand="block" color="primary" (click)="toggleRecording()">
+        {{ recording ? 'إيقاف التسجيل' : 'ابدأ التسجيل' }}
+      </ion-button>
+
+      <ion-textarea
+        placeholder="النص القرآني للمقارنة"
+        [(ngModel)]="referenceText"
+        auto-grow
+      ></ion-textarea>
+
+      <ion-button expand="block" color="success" (click)="analyzeRecitation()">
+        تحليل التلاوة
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="result">
+    <ion-card-header>
+      <ion-card-title>النتيجة</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-progress-bar [value]="result.accuracy"></ion-progress-bar>
+      <ion-list>
+        <ion-item *ngFor="let m of result.mistakes">
+          <ion-label>
+            <h3>{{ m.original }}</h3>
+            <p>{{ m.spoken }} — {{ m.type }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-text color="medium">{{ result.summary }}</ion-text>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

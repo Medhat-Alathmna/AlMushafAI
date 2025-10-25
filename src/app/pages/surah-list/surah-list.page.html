@@ -6,13 +6,8 @@
 
 <ion-content class="ion-padding" [fullscreen]="true">
   <ion-list lines="none">
-    <ion-item
-      button
-      detail="true"
-      *ngFor="let surah of surahs; trackBy: trackById"
-      [routerLink]="['/mushaf-viewer', surah.index]"
-      class="surah-item"
-    >
+    <ion-item button detail="true" *ngFor="let surah of surahs; trackBy: trackById"
+      [routerLink]="['/mushaf-viewer', surah.index]" class="surah-item">
       <div slot="start" class="num-circle">{{ surah.index }}</div>
 
       <ion-label>
@@ -23,7 +18,7 @@
             <ion-label>{{ surah.place === 'Mecca' ? 'مكية' : 'مدنية' }}</ion-label>
           </ion-chip> -->
           <ion-chip color="tertiary" outline>
-            <ion-icon name="list-outline"></ion-icon>
+            <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
             <ion-label>{{ surah.count }} آية</ion-label>
           </ion-chip>
           <ion-chip color="medium" outline>

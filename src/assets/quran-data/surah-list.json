@@ -1,2201 +1,2543 @@
-[
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 7,
-        "title": "Al-Fatiha",
-        "titleAr":"الفاتحة",
-        "index": "001",
-        "pages": "1",
-        "juz": [
-            {
-                "index": "01",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_7"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 286,
-        "title": "Al-Baqara",
-        "titleAr":"البقرة",
-        "index": "002",
-        "pages": "2",
-        "juz": [
-            {
-                "index": "01",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_141"
-                }
-            },
-            {
-                "index": "02",
-                "verse": {
-                    "start": "verse_142",
-                    "end": "verse_252"
-                }
-            },
-            {
-                "index": "03",
-                "verse": {
-                    "start": "verse_253",
-                    "end": "verse_286"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 200,
-        "title": "Aal-Imran",
-        "titleAr":"آل عمران",
-        "index": "003",
-        "pages": "45",
-        "juz": [
-            {
-                "index": "03",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_92"
-                }
-            },
-            {
-                "index": "04",
-                "verse": {
-                    "start": "verse_93",
-                    "end": "verse_200"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 176,
-        "title": "An-Nisaa'",
-        "titleAr":"النساء",
-        "index": "004",
-        "pages": "69",
-        "juz": [
-            {
-                "index": "04",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_23"
-                }
-            },
-            {
-                "index": "05",
-                "verse": {
-                    "start": "verse_24",
-                    "end": "verse_147"
-                }
-            },
-            {
-                "index": "06",
-                "verse": {
-                    "start": "verse_148",
-                    "end": "verse_176"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 120,
-        "title": "Al-Ma'ida",
-        "titleAr":"المائدة",
-        "index": "005",
-        "pages": "95",
-        "juz": [
-            {
-                "index": "06",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_81"
-                }
-            },
-            {
-                "index": "07",
-                "verse": {
-                    "start": "verse_82",
-                    "end": "verse_120"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 165,
-        "title": "Al-An'am",
-        "titleAr":"الأنعام",
-        "index": "006",
-        "pages": "115",
-        "juz": [
-            {
-                "index": "07",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_110"
-                }
-            },
-            {
-                "index": "08",
-                "verse": {
-                    "start": "verse_111",
-                    "end": "verse_165"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 206,
-        "title": "Al-A'raf",
-        "titleAr":"الأعراف",
-        "index": "007",
-        "pages": "136",
-        "juz": [
-            {
-                "index": "08",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_87"
-                }
-            },
-            {
-                "index": "09",
-                "verse": {
-                    "start": "verse_88",
-                    "end": "verse_206"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 75,
-        "title": "Al-Anfal",
-        "titleAr":"الأنفال",
-        "index": "008",
-        "pages": "160",
-        "juz": [
-            {
-                "index": "09",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_40"
-                }
-            },
-            {
-                "index": "10",
-                "verse": {
-                    "start": "verse_41",
-                    "end": "verse_75"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 129,
-        "title": "Al-Tawba",
-        "titleAr":"التوبة",
-        "index": "009",
-        "pages": "169",
-        "juz": [
-            {
-                "index": "10",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_92"
-                }
-            },
-            {
-                "index": "11",
-                "verse": {
-                    "start": "verse_93",
-                    "end": "verse_129"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 109,
-        "title": "Yunus",
-        "titleAr":"يونس",
-        "index": "010",
-        "pages": "187",
-        "juz": [
-            {
-                "index": "11",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_109"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 123,
-        "title": "Hud",
-        "titleAr":"هود",
-        "index": "011",
-        "pages": "199",
-        "juz": [
-            {
-                "index": "11",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_5"
-                }
-            },
-            {
-                "index": "12",
-                "verse": {
-                    "start": "verse_6",
-                    "end": "verse_123"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 111,
-        "title": "Yusuf",
-        "titleAr":"يوسف",
-        "index": "012",
-        "pages": "212",
-        "juz": [
-            {
-                "index": "12",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_52"
-                }
-            },
-            {
-                "index": "13",
-                "verse": {
-                    "start": "verse_53",
-                    "end": "verse_111"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 43,
-        "title": "Ar-Ra'd",
-        "titleAr":"الرعد",
-        "index": "013",
-        "pages": "225",
-        "juz": [
-            {
-                "index": "13",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_43"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 52,
-        "title": "Ibrahim",
-        "titleAr":"إبراهيم",
-        "index": "014",
-        "pages": "231",
-        "juz": [
-            {
-                "index": "13",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_52"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 99,
-        "title": "Al-Hijr",
-        "titleAr":"الحجر",
-        "index": "015",
-        "pages": "237",
-        "juz": [
-            {
-                "index": "14",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_99"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 128,
-        "title": "An-Nahl",
-        "titleAr":"النحل",
-        "index": "016",
-        "pages": "242",
-        "juz": [
-            {
-                "index": "14",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_128"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 111,
-        "title": "Al-Israa",
-        "titleAr":"الإسراء",
-        "index": "017",
-        "pages": "255",
-        "juz": [
-            {
-                "index": "15",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_111"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 110,
-        "title": "Al-Kahf",
-        "titleAr":"الكهف",
-        "index": "018",
-        "pages": "266",
-        "juz": [
-            {
-                "index": "15",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_74"
-                }
-            },
-            {
-                "index": "16",
-                "verse": {
-                    "start": "verse_75",
-                    "end": "verse_110"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 98,
-        "title": "Maryam",
-        "titleAr":"مريم",
-        "index": "019",
-        "pages": "277",
-        "juz": [
-            {
-                "index": "16",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_98"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 135,
-        "title": "Ta-Ha",
-        "titleAr":"طه",
-        "index": "020",
-        "pages": "284",
-        "juz": [
-            {
-                "index": "16",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_135"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 112,
-        "title": "Al-Anbiya",
-        "titleAr":"الأنبياء",
-        "index": "021",
-        "pages": "294",
-        "juz": [
-            {
-                "index": "17",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_112"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 78,
-        "title": "Al-Hajj",
-        "titleAr":"الحج",
-        "index": "022",
-        "pages": "302",
-        "juz": [
-            {
-                "index": "17",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_78"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 118,
-        "title": "Al-Muminun",
-        "titleAr":"المؤمنون",
-        "index": "023",
-        "pages": "311",
-        "juz": [
-            {
-                "index": "18",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_118"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 64,
-        "title": "An-Nur",
-        "titleAr":"النور",
-        "index": "024",
-        "pages": "319",
-        "juz": [
-            {
-                "index": "18",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_64"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 77,
-        "title": "Al-Furqan",
-        "titleAr":"الفرقان",
-        "index": "025",
-        "pages": "329",
-        "juz": [
-            {
-                "index": "18",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_20"
-                }
-            },
-            {
-                "index": "19",
-                "verse": {
-                    "start": "verse_21",
-                    "end": "verse_77"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 227,
-        "title": "Ash-Shuara",
-        "titleAr":"الشعراء",
-        "index": "026",
-        "pages": "335",
-        "juz": [
-            {
-                "index": "19",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_227"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 93,
-        "title": "An-Naml",
-        "titleAr":"النمل",
-        "index": "027",
-        "pages": "345",
-        "juz": [
-            {
-                "index": "19",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_55"
-                }
-            },
-            {
-                "index": "20",
-                "verse": {
-                    "start": "verse_56",
-                    "end": "verse_93"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 88,
-        "title": "Al-Qasas",
-        "titleAr":"القصص",
-        "index": "028",
-        "pages": "354",
-        "juz": [
-            {
-                "index": "20",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_88"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 69,
-        "title": "Al-Ankabut",
-        "titleAr":"العنكبوت",
-        "index": "029",
-        "pages": "364",
-        "juz": [
-            {
-                "index": "20",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_45"
-                }
-            },
-            {
-                "index": "21",
-                "verse": {
-                    "start": "verse_46",
-                    "end": "verse_69"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 60,
-        "title": "Ar-Rum",
-        "titleAr":"الروم",
-        "index": "030",
-        "pages": "371",
-        "juz": [
-            {
-                "index": "21",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_60"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 34,
-        "title": "Luqman",
-        "titleAr":"لقمان",
-        "index": "031",
-        "pages": "377",
-        "juz": [
-            {
-                "index": "21",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_34"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 30,
-        "title": "As-Sajdah",
-        "titleAr":"السجدة",
-        "index": "032",
-        "pages": "381",
-        "juz": [
-            {
-                "index": "21",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_30"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 73,
-        "title": "Al-Ahzab",
-        "titleAr":"الأحزاب",
-        "index": "033",
-        "pages": "383",
-        "juz": [
-            {
-                "index": "21",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_30"
-                }
-            },
-            {
-                "index": "22",
-                "verse": {
-                    "start": "verse_31",
-                    "end": "verse_73"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 54,
-        "title": "Saba",
-        "titleAr":"سبأ",
-        "index": "034",
-        "pages": "393",
-        "juz": [
-            {
-                "index": "22",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_54"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 45,
-        "title": "Fatir",
-        "titleAr":"فاطر",
-        "index": "035",
-        "pages": "399",
-        "juz": [
-            {
-                "index": "22",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_45"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 83,
-        "title": "Yasin",
-        "titleAr":"يس",
-        "index": "036",
-        "pages": "404",
-        "juz": [
-            {
-                "index": "22",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_27"
-                }
-            },
-            {
-                "index": "23",
-                "verse": {
-                    "start": "verse_28",
-                    "end": "verse_83"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 182,
-        "title": "As-Saffat",
-        "titleAr":"الصافات",
-        "index": "037",
-        "pages": "410",
-        "juz": [
-            {
-                "index": "23",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_182"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 88,
-        "title": "Sad",
-        "titleAr":"ص",
-        "index": "038",
-        "pages": "417",
-        "juz": [
-            {
-                "index": "23",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_88"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 75,
-        "title": "Az-Zumar",
-        "titleAr":"الزمر",
-        "index": "039",
-        "pages": "422",
-        "juz": [
-            {
-                "index": "23",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_31"
-                }
-            },
-            {
-                "index": "24",
-                "verse": {
-                    "start": "verse_32",
-                    "end": "verse_75"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 85,
-        "title": "Ghafir",
-        "titleAr":"غافر",
-        "index": "040",
-        "pages": "431",
-        "juz": [
-            {
-                "index": "24",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_85"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 54,
-        "title": "Fussilat",
-        "titleAr":"فصلت",
-        "index": "041",
-        "pages": "439",
-        "juz": [
-            {
-                "index": "24",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_46"
-                }
-            },
-            {
-                "index": "25",
-                "verse": {
-                    "start": "verse_47",
-                    "end": "verse_54"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 53,
-        "title": "Ash-Shura",
-        "titleAr":"الشورى",
-        "index": "042",
-        "pages": "445",
-        "juz": [
-            {
-                "index": "25",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_53"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 89,
-        "title": "Az-Zukhruf",
-        "titleAr":"الزخرف",
-        "index": "043",
-        "pages": "451",
-        "juz": [
-            {
-                "index": "25",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_89"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 59,
-        "title": "Ad-Dukhan",
-        "titleAr":"الدخان",
-        "index": "044",
-        "pages": "457",
-        "juz": [
-            {
-                "index": "25",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_59"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 37,
-        "title": "Al-Jathiya",
-        "titleAr":"الجاثية",
-        "index": "045",
-        "pages": "460",
-        "juz": [
-            {
-                "index": "25",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_37"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 35,
-        "title": "Al-Ahqaf",
-        "titleAr":"الأحقاف",
-        "index": "046",
-        "pages": "464",
-        "juz": [
-            {
-                "index": "26",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_35"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 38,
-        "title": "Muhammad",
-        "titleAr":"محمد",
-        "index": "047",
-        "pages": "468",
-        "juz": [
-            {
-                "index": "26",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_38"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 29,
-        "title": "Al-Fath",
-        "titleAr":"الفتح",
-        "index": "048",
-        "pages": "472",
-        "juz": [
-            {
-                "index": "26",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_29"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 18,
-        "title": "Al-Hujurat",
-        "titleAr":"الحجرات",
-        "index": "049",
-        "pages": "477",
-        "juz": [
-            {
-                "index": "26",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_18"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 45,
-        "title": "Qaf",
-        "titleAr":"ق",
-        "index": "050",
-        "pages": "479",
-        "juz": [
-            {
-                "index": "26",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_45"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 60,
-        "title": "Az-Zariyat",
-        "titleAr":"الذاريات",
-        "index": "051",
-        "pages": "482",
-        "juz": [
-            {
-                "index": "26",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_30"
-                }
-            },
-            {
-                "index": "27",
-                "verse": {
-                    "start": "verse_31",
-                    "end": "verse_60"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 49,
-        "title": "At-Tur",
-        "titleAr":"الطور",
-        "index": "052",
-        "pages": "485",
-        "juz": [
-            {
-                "index": "27",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_49"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 62,
-        "title": "An-Najm",
-        "titleAr":"النجم",
-        "index": "053",
-        "pages": "487",
-        "juz": [
-            {
-                "index": "27",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_62"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 55,
-        "title": "Al-Qamar",
-        "titleAr":"القمر",
-        "index": "054",
-        "pages": "490",
-        "juz": [
-            {
-                "index": "27",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_55"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 78,
-        "title": "Ar-Rahman",
-        "titleAr":"الرحمن",
-        "index": "055",
-        "pages": "493",
-        "juz": [
-            {
-                "index": "27",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_78"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 96,
-        "title": "Al-Waqia",
-        "titleAr":"الواقعة",
-        "index": "056",
-        "pages": "496",
-        "juz": [
-            {
-                "index": "27",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_96"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 29,
-        "title": "Al-Hadid",
-        "titleAr":"الحديد",
-        "index": "057",
-        "pages": "499",
-        "juz": [
-            {
-                "index": "27",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_29"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 22,
-        "title": "Al-Mujadilah",
-        "titleAr":"المجادلة",
-        "index": "058",
-        "pages": "504",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_22"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 24,
-        "title": "Al-Hashr",
-        "titleAr":"الحشر",
-        "index": "059",
-        "pages": "507",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_24"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 13,
-        "title": "Al-Mumtahinah",
-        "titleAr":"الممتحنة",
-        "index": "060",
-        "pages": "510",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_13"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 14,
-        "title": "As-Saff",
-        "titleAr":"الصف",
-        "index": "061",
-        "pages": "513",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_14"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 11,
-        "title": "Al-Jumu'ah",
-        "titleAr":"الجمعة",
-        "index": "062",
-        "pages": "515",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_11"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 11,
-        "title": "Al-Munafiqun",
-        "titleAr":"المنافقون",
-        "index": "063",
-        "pages": "516",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_11"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 18,
-        "title": "At-Taghabun",
-        "titleAr":"التغابن",
-        "index": "064",
-        "pages": "518",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_18"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 12,
-        "title": "At-Talaq",
-        "titleAr":"الطلاق",
-        "index": "065",
-        "pages": "520",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_12"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 12,
-        "title": "At-Tahrim",
-        "titleAr":"التحريم",
-        "index": "066",
-        "pages": "522",
-        "juz": [
-            {
-                "index": "28",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_12"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 30,
-        "title": "Al-Mulk",
-        "titleAr":"الملك",
-        "index": "067",
-        "pages": "524",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_30"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 52,
-        "title": "Al-Qalam",
-        "titleAr":"القلم",
-        "index": "068",
-        "pages": "526",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_52"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 52,
-        "title": "Al-Haqqah",
-        "titleAr":"الحاقة",
-        "index": "069",
-        "pages": "529",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_52"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 44,
-        "title": "Al-Ma'arij",
-        "titleAr":"المعارج",
-        "index": "070",
-        "pages": "531",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_44"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 28,
-        "title": "Nuh",
-        "titleAr":"نوح",
-        "index": "071",
-        "pages": "533",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_28"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 28,
-        "title": "Al-Jinn",
-        "titleAr":"الجن",
-        "index": "072",
-        "pages": "534",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_28"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 20,
-        "title": "Al-Muzzammil",
-        "titleAr":"المزمل",
-        "index": "073",
-        "pages": "537",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_20"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 56,
-        "title": "Al-Muddaththir",
-        "titleAr":"المدثر",
-        "index": "074",
-        "pages": "538",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_56"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 40,
-        "title": "Al-Qiyamah",
-        "titleAr":"القيامة",
-        "index": "075",
-        "pages": "540",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_40"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 31,
-        "title": "Al-Insan",
-        "titleAr":"الإنسان",
-        "index": "076",
-        "pages": "542",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_31"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 50,
-        "title": "Al-Mursalat",
-        "titleAr":"المرسلات",
-        "index": "077",
-        "pages": "544",
-        "juz": [
-            {
-                "index": "29",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_50"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 40,
-        "title": "An-Naba",
-        "titleAr":"النبأ",
-        "index": "078",
-        "pages": "545",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_40"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 46,
-        "title": "An-Naziat",
-        "titleAr":"النازعات",
-        "index": "079",
-        "pages": "547",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_46"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 42,
-        "title": "Abasa",
-        "titleAr":"عبس",
-        "index": "080",
-        "pages": "548",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_42"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 29,
-        "title": "At-Takwir",
-        "titleAr":"التكوير",
-        "index": "081",
-        "pages": "550",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_29"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 19,
-        "title": "Al-Infitar",
-        "titleAr":"الإنفطار",
-        "index": "082",
-        "pages": "551",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_19"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 36,
-        "title": "Al-Mutaffifin",
-        "titleAr":"المطففين",
-        "index": "083",
-        "pages": "552",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_36"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 25,
-        "title": "Al-Inshiqaq",
-        "titleAr":"الإنشقاق",
-        "index": "084",
-        "pages": "553",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_25"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 22,
-        "title": "Al-Buruj",
-        "titleAr":"البروج",
-        "index": "085",
-        "pages": "554",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_22"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 17,
-        "title": "At-Tariq",
-        "titleAr":"الطارق",
-        "index": "086",
-        "pages": "555",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_17"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 19,
-        "title": "Al-Ala",
-        "titleAr":"الأعلى",
-        "index": "087",
-        "pages": "556",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_19"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 26,
-        "title": "Al-Ghashiyah",
-        "titleAr":"الغاشية",
-        "index": "088",
-        "pages": "556",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_26"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 30,
-        "title": "Al-Fajr",
-        "titleAr":"الفجر",
-        "index": "089",
-        "pages": "557",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_30"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 20,
-        "title": "Al-Balad",
-        "titleAr":"البلد",
-        "index": "090",
-        "pages": "559",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_20"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 15,
-        "title": "Ash-Shams",
-        "titleAr":"الشمس",
-        "index": "091",
-        "pages": "559",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_15"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 21,
-        "title": "Al-Lail",
-        "titleAr":"الليل",
-        "index": "092",
-        "pages": "560",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_21"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 11,
-        "title": "Ad-Duha",
-        "titleAr":"الضحى",
-        "index": "093",
-        "pages": "561",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_11"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 8,
-        "title": "Ash-Sharh",
-        "titleAr":"الشرح",
-        "index": "094",
-        "pages": "561",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_8"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 8,
-        "title": "At-Tin",
-        "titleAr":"التين",
-        "index": "095",
-        "pages": "562",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_8"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 19,
-        "title": "Al-Alaq",
-        "titleAr":"العلق",
-        "index": "096",
-        "pages": "562",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_19"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 5,
-        "title": "Al-Qadr",
-        "titleAr":"القدر",
-        "index": "097",
-        "pages": "563",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_5"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 8,
-        "title": "Al-Bayinah",
-        "titleAr":"البينة",
-        "index": "098",
-        "pages": "563",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_8"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 8,
-        "title": "Az-Zalzalah",
-        "titleAr":"الزلزلة",
-        "index": "099",
-        "pages": "564",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_8"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 11,
-        "title": "Al-Adiyat",
-        "titleAr":"العاديات",
-        "index": "100",
-        "pages": "564",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_11"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 11,
-        "title": "Al-Qariah",
-        "titleAr":"القارعة",
-        "index": "101",
-        "pages": "565",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_11"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 8,
-        "title": "Al-Takathur",
-        "titleAr":"التكاثر",
-        "index": "102",
-        "pages": "565",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_8"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 3,
-        "title": "Al-Asr",
-        "titleAr":"العصر",
-        "index": "103",
-        "pages": "566",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_3"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 9,
-        "title": "Al-Humazah",
-        "titleAr":"الهمزة",
-        "index": "104",
-        "pages": "566",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_9"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 5,
-        "title": "Al-Fil",
-        "titleAr":"الفيل",
-        "index": "105",
-        "pages": "566",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_5"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 4,
-        "title": "Quraish",
-        "titleAr":"قريش",
-        "index": "106",
-        "pages": "567",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_4"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 7,
-        "title": "Al-Ma'un",
-        "titleAr":"الماعون",
-        "index": "107",
-        "pages": "567",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_7"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 3,
-        "title": "Al-Kauthar",
-        "titleAr":"الكوثر",
-        "index": "108",
-        "pages": "567",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_3"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 6,
-        "title": "Al-Kafirun",
-        "titleAr":"الكافرون",
-        "index": "109",
-        "pages": "568",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_6"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Medina",
-        "type": "Madaniyah",
-        "count": 3,
-        "title": "An-Nasr",
-        "titleAr":"النصر",
-        "index": "110",
-        "pages": "568",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_3"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 5,
-        "title": "Al-Masad",
-        "titleAr":"المسد",
-        "index": "111",
-        "pages": "568",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_5"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 4,
-        "title": "Al-Ikhlas",
-        "titleAr":"الإخلاص",
-        "index": "112",
-        "pages": "569",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_4"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 5,
-        "title": "Al-Falaq",
-        "titleAr":"الفلق",
-        "index": "113",
-        "pages": "569",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_5"
-                }
-            }
-        ]
-    },
-    {
-        "place": "Mecca",
-        "type": "Makkiyah",
-        "count": 6,
-        "title": "An-Nas",
-        "titleAr":"الناس",
-        "index": "114",
-        "pages": "569",
-        "juz": [
-            {
-                "index": "30",
-                "verse": {
-                    "start": "verse_1",
-                    "end": "verse_6"
-                }
-            }
-        ]
+﻿[
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  7,
+        "title":  "Al-Fatiha",
+        "index":  "001",
+        "pages":  "1",
+        "juz":  [
+                    {
+                        "index":  "01",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_7"
+                                  }
+                    }
+                ],
+        "pageStart":  "1",
+        "pageEnd":  "1",
+        "pageCount":  "1",
+        "titleAr":  "الفاتحة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  286,
+        "title":  "Al-Baqara",
+        "index":  "002",
+        "pages":  "2",
+        "juz":  [
+                    {
+                        "index":  "01",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_141"
+                                  }
+                    },
+                    {
+                        "index":  "02",
+                        "verse":  {
+                                      "start":  "verse_142",
+                                      "end":  "verse_252"
+                                  }
+                    },
+                    {
+                        "index":  "03",
+                        "verse":  {
+                                      "start":  "verse_253",
+                                      "end":  "verse_286"
+                                  }
+                    }
+                ],
+        "pageStart":  "2",
+        "pageEnd":  "49",
+        "pageCount":  "48",
+        "titleAr":  "البقرة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  200,
+        "title":  "Aal-Imran",
+        "index":  "003",
+        "pages":  "50",
+        "juz":  [
+                    {
+                        "index":  "03",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_92"
+                                  }
+                    },
+                    {
+                        "index":  "04",
+                        "verse":  {
+                                      "start":  "verse_93",
+                                      "end":  "verse_200"
+                                  }
+                    }
+                ],
+        "pageStart":  "50",
+        "pageEnd":  "68",
+        "pageCount":  "19",
+        "titleAr":  "آل عمران"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  176,
+        "title":  "An-Nisaa\u0027",
+        "index":  "004",
+        "pages":  "69",
+        "juz":  [
+                    {
+                        "index":  "04",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_23"
+                                  }
+                    },
+                    {
+                        "index":  "05",
+                        "verse":  {
+                                      "start":  "verse_24",
+                                      "end":  "verse_147"
+                                  }
+                    },
+                    {
+                        "index":  "06",
+                        "verse":  {
+                                      "start":  "verse_148",
+                                      "end":  "verse_176"
+                                  }
+                    }
+                ],
+        "pageStart":  "69",
+        "pageEnd":  "94",
+        "pageCount":  "26",
+        "titleAr":  "النساء"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  120,
+        "title":  "Al-Ma\u0027ida",
+        "index":  "005",
+        "pages":  "95",
+        "juz":  [
+                    {
+                        "index":  "06",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_81"
+                                  }
+                    },
+                    {
+                        "index":  "07",
+                        "verse":  {
+                                      "start":  "verse_82",
+                                      "end":  "verse_120"
+                                  }
+                    }
+                ],
+        "pageStart":  "95",
+        "pageEnd":  "114",
+        "pageCount":  "20",
+        "titleAr":  "المائدة"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  165,
+        "title":  "Al-An\u0027am",
+        "index":  "006",
+        "pages":  "115",
+        "juz":  [
+                    {
+                        "index":  "07",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_110"
+                                  }
+                    },
+                    {
+                        "index":  "08",
+                        "verse":  {
+                                      "start":  "verse_111",
+                                      "end":  "verse_165"
+                                  }
+                    }
+                ],
+        "pageStart":  "115",
+        "pageEnd":  "135",
+        "pageCount":  "21",
+        "titleAr":  "الأنعام"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  206,
+        "title":  "Al-A\u0027raf",
+        "index":  "007",
+        "pages":  "136",
+        "juz":  [
+                    {
+                        "index":  "08",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_87"
+                                  }
+                    },
+                    {
+                        "index":  "09",
+                        "verse":  {
+                                      "start":  "verse_88",
+                                      "end":  "verse_206"
+                                  }
+                    }
+                ],
+        "pageStart":  "136",
+        "pageEnd":  "159",
+        "pageCount":  "24",
+        "titleAr":  "الأعراف"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  75,
+        "title":  "Al-Anfal",
+        "index":  "008",
+        "pages":  "160",
+        "juz":  [
+                    {
+                        "index":  "09",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_40"
+                                  }
+                    },
+                    {
+                        "index":  "10",
+                        "verse":  {
+                                      "start":  "verse_41",
+                                      "end":  "verse_75"
+                                  }
+                    }
+                ],
+        "pageStart":  "160",
+        "pageEnd":  "168",
+        "pageCount":  "9",
+        "titleAr":  "الأنفال"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  129,
+        "title":  "Al-Tawba",
+        "index":  "009",
+        "pages":  "169",
+        "juz":  [
+                    {
+                        "index":  "10",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_92"
+                                  }
+                    },
+                    {
+                        "index":  "11",
+                        "verse":  {
+                                      "start":  "verse_93",
+                                      "end":  "verse_129"
+                                  }
+                    }
+                ],
+        "pageStart":  "169",
+        "pageEnd":  "186",
+        "pageCount":  "18",
+        "titleAr":  "التوبة"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  109,
+        "title":  "Yunus",
+        "index":  "010",
+        "pages":  "187",
+        "juz":  [
+                    {
+                        "index":  "11",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_109"
+                                  }
+                    }
+                ],
+        "pageStart":  "187",
+        "pageEnd":  "198",
+        "pageCount":  "12",
+        "titleAr":  "يونس"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  123,
+        "title":  "Hud",
+        "index":  "011",
+        "pages":  "199",
+        "juz":  [
+                    {
+                        "index":  "11",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_5"
+                                  }
+                    },
+                    {
+                        "index":  "12",
+                        "verse":  {
+                                      "start":  "verse_6",
+                                      "end":  "verse_123"
+                                  }
+                    }
+                ],
+        "pageStart":  "199",
+        "pageEnd":  "211",
+        "pageCount":  "13",
+        "titleAr":  "هود"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  111,
+        "title":  "Yusuf",
+        "index":  "012",
+        "pages":  "212",
+        "juz":  [
+                    {
+                        "index":  "12",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_52"
+                                  }
+                    },
+                    {
+                        "index":  "13",
+                        "verse":  {
+                                      "start":  "verse_53",
+                                      "end":  "verse_111"
+                                  }
+                    }
+                ],
+        "pageStart":  "212",
+        "pageEnd":  "224",
+        "pageCount":  "13",
+        "titleAr":  "يوسف"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  43,
+        "title":  "Ar-Ra\u0027d",
+        "index":  "013",
+        "pages":  "225",
+        "juz":  [
+                    {
+                        "index":  "13",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_43"
+                                  }
+                    }
+                ],
+        "pageStart":  "225",
+        "pageEnd":  "230",
+        "pageCount":  "6",
+        "titleAr":  "الرعد"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  52,
+        "title":  "Ibrahim",
+        "index":  "014",
+        "pages":  "231",
+        "juz":  [
+                    {
+                        "index":  "13",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_52"
+                                  }
+                    }
+                ],
+        "pageStart":  "231",
+        "pageEnd":  "236",
+        "pageCount":  "6",
+        "titleAr":  "إبراهيم"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  99,
+        "title":  "Al-Hijr",
+        "index":  "015",
+        "pages":  "237",
+        "juz":  [
+                    {
+                        "index":  "14",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_99"
+                                  }
+                    }
+                ],
+        "pageStart":  "237",
+        "pageEnd":  "241",
+        "pageCount":  "5",
+        "titleAr":  "الحجر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  128,
+        "title":  "An-Nahl",
+        "index":  "016",
+        "pages":  "242",
+        "juz":  [
+                    {
+                        "index":  "14",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_128"
+                                  }
+                    }
+                ],
+        "pageStart":  "242",
+        "pageEnd":  "254",
+        "pageCount":  "13",
+        "titleAr":  "النحل"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  111,
+        "title":  "Al-Israa",
+        "index":  "017",
+        "pages":  "255",
+        "juz":  [
+                    {
+                        "index":  "15",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_111"
+                                  }
+                    }
+                ],
+        "pageStart":  "255",
+        "pageEnd":  "265",
+        "pageCount":  "11",
+        "titleAr":  "الإسراء"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  110,
+        "title":  "Al-Kahf",
+        "index":  "018",
+        "pages":  "266",
+        "juz":  [
+                    {
+                        "index":  "15",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_74"
+                                  }
+                    },
+                    {
+                        "index":  "16",
+                        "verse":  {
+                                      "start":  "verse_75",
+                                      "end":  "verse_110"
+                                  }
+                    }
+                ],
+        "pageStart":  "266",
+        "pageEnd":  "276",
+        "pageCount":  "11",
+        "titleAr":  "الكهف"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  98,
+        "title":  "Maryam",
+        "index":  "019",
+        "pages":  "277",
+        "juz":  [
+                    {
+                        "index":  "16",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_98"
+                                  }
+                    }
+                ],
+        "pageStart":  "277",
+        "pageEnd":  "283",
+        "pageCount":  "7",
+        "titleAr":  "مريم"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  135,
+        "title":  "Ta-Ha",
+        "index":  "020",
+        "pages":  "284",
+        "juz":  [
+                    {
+                        "index":  "16",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_135"
+                                  }
+                    }
+                ],
+        "pageStart":  "284",
+        "pageEnd":  "293",
+        "pageCount":  "10",
+        "titleAr":  "طه"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  112,
+        "title":  "Al-Anbiya",
+        "index":  "021",
+        "pages":  "294",
+        "juz":  [
+                    {
+                        "index":  "17",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_112"
+                                  }
+                    }
+                ],
+        "pageStart":  "294",
+        "pageEnd":  "301",
+        "pageCount":  "8",
+        "titleAr":  "الأنبياء"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  78,
+        "title":  "Al-Hajj",
+        "index":  "022",
+        "pages":  "302",
+        "juz":  [
+                    {
+                        "index":  "17",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_78"
+                                  }
+                    }
+                ],
+        "pageStart":  "302",
+        "pageEnd":  "310",
+        "pageCount":  "9",
+        "titleAr":  "الحج"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  118,
+        "title":  "Al-Muminun",
+        "index":  "023",
+        "pages":  "311",
+        "juz":  [
+                    {
+                        "index":  "18",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_118"
+                                  }
+                    }
+                ],
+        "pageStart":  "311",
+        "pageEnd":  "318",
+        "pageCount":  "8",
+        "titleAr":  "المؤمنون"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  64,
+        "title":  "An-Nur",
+        "index":  "024",
+        "pages":  "319",
+        "juz":  [
+                    {
+                        "index":  "18",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_64"
+                                  }
+                    }
+                ],
+        "pageStart":  "319",
+        "pageEnd":  "328",
+        "pageCount":  "10",
+        "titleAr":  "النور"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  77,
+        "title":  "Al-Furqan",
+        "index":  "025",
+        "pages":  "329",
+        "juz":  [
+                    {
+                        "index":  "18",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_20"
+                                  }
+                    },
+                    {
+                        "index":  "19",
+                        "verse":  {
+                                      "start":  "verse_21",
+                                      "end":  "verse_77"
+                                  }
+                    }
+                ],
+        "pageStart":  "329",
+        "pageEnd":  "334",
+        "pageCount":  "6",
+        "titleAr":  "الفرقان"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  227,
+        "title":  "Ash-Shuara",
+        "index":  "026",
+        "pages":  "335",
+        "juz":  [
+                    {
+                        "index":  "19",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_227"
+                                  }
+                    }
+                ],
+        "pageStart":  "335",
+        "pageEnd":  "344",
+        "pageCount":  "10",
+        "titleAr":  "الشعراء"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  93,
+        "title":  "An-Naml",
+        "index":  "027",
+        "pages":  "345",
+        "juz":  [
+                    {
+                        "index":  "19",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_55"
+                                  }
+                    },
+                    {
+                        "index":  "20",
+                        "verse":  {
+                                      "start":  "verse_56",
+                                      "end":  "verse_93"
+                                  }
+                    }
+                ],
+        "pageStart":  "345",
+        "pageEnd":  "353",
+        "pageCount":  "9",
+        "titleAr":  "النمل"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  88,
+        "title":  "Al-Qasas",
+        "index":  "028",
+        "pages":  "354",
+        "juz":  [
+                    {
+                        "index":  "20",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_88"
+                                  }
+                    }
+                ],
+        "pageStart":  "354",
+        "pageEnd":  "363",
+        "pageCount":  "10",
+        "titleAr":  "القصص"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  69,
+        "title":  "Al-Ankabut",
+        "index":  "029",
+        "pages":  "364",
+        "juz":  [
+                    {
+                        "index":  "20",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_45"
+                                  }
+                    },
+                    {
+                        "index":  "21",
+                        "verse":  {
+                                      "start":  "verse_46",
+                                      "end":  "verse_69"
+                                  }
+                    }
+                ],
+        "pageStart":  "364",
+        "pageEnd":  "370",
+        "pageCount":  "7",
+        "titleAr":  "العنكبوت"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  60,
+        "title":  "Ar-Rum",
+        "index":  "030",
+        "pages":  "371",
+        "juz":  [
+                    {
+                        "index":  "21",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_60"
+                                  }
+                    }
+                ],
+        "pageStart":  "371",
+        "pageEnd":  "376",
+        "pageCount":  "6",
+        "titleAr":  "الروم"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  34,
+        "title":  "Luqman",
+        "index":  "031",
+        "pages":  "377",
+        "juz":  [
+                    {
+                        "index":  "21",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_34"
+                                  }
+                    }
+                ],
+        "pageStart":  "377",
+        "pageEnd":  "380",
+        "pageCount":  "4",
+        "titleAr":  "لقمان"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  30,
+        "title":  "As-Sajdah",
+        "index":  "032",
+        "pages":  "381",
+        "juz":  [
+                    {
+                        "index":  "21",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_30"
+                                  }
+                    }
+                ],
+        "pageStart":  "381",
+        "pageEnd":  "382",
+        "pageCount":  "2",
+        "titleAr":  "السجدة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  73,
+        "title":  "Al-Ahzab",
+        "index":  "033",
+        "pages":  "383",
+        "juz":  [
+                    {
+                        "index":  "21",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_30"
+                                  }
+                    },
+                    {
+                        "index":  "22",
+                        "verse":  {
+                                      "start":  "verse_31",
+                                      "end":  "verse_73"
+                                  }
+                    }
+                ],
+        "pageStart":  "383",
+        "pageEnd":  "392",
+        "pageCount":  "10",
+        "titleAr":  "الأحزاب"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  54,
+        "title":  "Saba",
+        "index":  "034",
+        "pages":  "393",
+        "juz":  [
+                    {
+                        "index":  "22",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_54"
+                                  }
+                    }
+                ],
+        "pageStart":  "393",
+        "pageEnd":  "398",
+        "pageCount":  "6",
+        "titleAr":  "سبأ"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  45,
+        "title":  "Fatir",
+        "index":  "035",
+        "pages":  "399",
+        "juz":  [
+                    {
+                        "index":  "22",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_45"
+                                  }
+                    }
+                ],
+        "pageStart":  "399",
+        "pageEnd":  "403",
+        "pageCount":  "5",
+        "titleAr":  "فاطر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  83,
+        "title":  "Yasin",
+        "index":  "036",
+        "pages":  "404",
+        "juz":  [
+                    {
+                        "index":  "22",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_27"
+                                  }
+                    },
+                    {
+                        "index":  "23",
+                        "verse":  {
+                                      "start":  "verse_28",
+                                      "end":  "verse_83"
+                                  }
+                    }
+                ],
+        "pageStart":  "404",
+        "pageEnd":  "409",
+        "pageCount":  "6",
+        "titleAr":  "يس"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  182,
+        "title":  "As-Saffat",
+        "index":  "037",
+        "pages":  "410",
+        "juz":  [
+                    {
+                        "index":  "23",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_182"
+                                  }
+                    }
+                ],
+        "pageStart":  "410",
+        "pageEnd":  "416",
+        "pageCount":  "7",
+        "titleAr":  "الصافات"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  88,
+        "title":  "Sad",
+        "index":  "038",
+        "pages":  "417",
+        "juz":  [
+                    {
+                        "index":  "23",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_88"
+                                  }
+                    }
+                ],
+        "pageStart":  "417",
+        "pageEnd":  "421",
+        "pageCount":  "5",
+        "titleAr":  "ص"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  75,
+        "title":  "Az-Zumar",
+        "index":  "039",
+        "pages":  "422",
+        "juz":  [
+                    {
+                        "index":  "23",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_31"
+                                  }
+                    },
+                    {
+                        "index":  "24",
+                        "verse":  {
+                                      "start":  "verse_32",
+                                      "end":  "verse_75"
+                                  }
+                    }
+                ],
+        "pageStart":  "422",
+        "pageEnd":  "430",
+        "pageCount":  "9",
+        "titleAr":  "الزمر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  85,
+        "title":  "Ghafir",
+        "index":  "040",
+        "pages":  "431",
+        "juz":  [
+                    {
+                        "index":  "24",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_85"
+                                  }
+                    }
+                ],
+        "pageStart":  "431",
+        "pageEnd":  "438",
+        "pageCount":  "8",
+        "titleAr":  "غافر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  54,
+        "title":  "Fussilat",
+        "index":  "041",
+        "pages":  "439",
+        "juz":  [
+                    {
+                        "index":  "24",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_46"
+                                  }
+                    },
+                    {
+                        "index":  "25",
+                        "verse":  {
+                                      "start":  "verse_47",
+                                      "end":  "verse_54"
+                                  }
+                    }
+                ],
+        "pageStart":  "439",
+        "pageEnd":  "444",
+        "pageCount":  "6",
+        "titleAr":  "فصلت"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  53,
+        "title":  "Ash-Shura",
+        "index":  "042",
+        "pages":  "445",
+        "juz":  [
+                    {
+                        "index":  "25",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_53"
+                                  }
+                    }
+                ],
+        "pageStart":  "445",
+        "pageEnd":  "450",
+        "pageCount":  "6",
+        "titleAr":  "الشورى"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  89,
+        "title":  "Az-Zukhruf",
+        "index":  "043",
+        "pages":  "451",
+        "juz":  [
+                    {
+                        "index":  "25",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_89"
+                                  }
+                    }
+                ],
+        "pageStart":  "451",
+        "pageEnd":  "456",
+        "pageCount":  "6",
+        "titleAr":  "الزخرف"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  59,
+        "title":  "Ad-Dukhan",
+        "index":  "044",
+        "pages":  "457",
+        "juz":  [
+                    {
+                        "index":  "25",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_59"
+                                  }
+                    }
+                ],
+        "pageStart":  "457",
+        "pageEnd":  "459",
+        "pageCount":  "3",
+        "titleAr":  "الدخان"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  37,
+        "title":  "Al-Jathiya",
+        "index":  "045",
+        "pages":  "460",
+        "juz":  [
+                    {
+                        "index":  "25",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_37"
+                                  }
+                    }
+                ],
+        "pageStart":  "460",
+        "pageEnd":  "463",
+        "pageCount":  "4",
+        "titleAr":  "الجاثية"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  35,
+        "title":  "Al-Ahqaf",
+        "index":  "046",
+        "pages":  "464",
+        "juz":  [
+                    {
+                        "index":  "26",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_35"
+                                  }
+                    }
+                ],
+        "pageStart":  "464",
+        "pageEnd":  "467",
+        "pageCount":  "4",
+        "titleAr":  "الأحقاف"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  38,
+        "title":  "Muhammad",
+        "index":  "047",
+        "pages":  "468",
+        "juz":  [
+                    {
+                        "index":  "26",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_38"
+                                  }
+                    }
+                ],
+        "pageStart":  "468",
+        "pageEnd":  "471",
+        "pageCount":  "4",
+        "titleAr":  "محمد"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  29,
+        "title":  "Al-Fath",
+        "index":  "048",
+        "pages":  "472",
+        "juz":  [
+                    {
+                        "index":  "26",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_29"
+                                  }
+                    }
+                ],
+        "pageStart":  "472",
+        "pageEnd":  "476",
+        "pageCount":  "5",
+        "titleAr":  "الفتح"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  18,
+        "title":  "Al-Hujurat",
+        "index":  "049",
+        "pages":  "477",
+        "juz":  [
+                    {
+                        "index":  "26",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_18"
+                                  }
+                    }
+                ],
+        "pageStart":  "477",
+        "pageEnd":  "478",
+        "pageCount":  "2",
+        "titleAr":  "الحجرات"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  45,
+        "title":  "Qaf",
+        "index":  "050",
+        "pages":  "479",
+        "juz":  [
+                    {
+                        "index":  "26",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_45"
+                                  }
+                    }
+                ],
+        "pageStart":  "479",
+        "pageEnd":  "481",
+        "pageCount":  "3",
+        "titleAr":  "ق"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  60,
+        "title":  "Az-Zariyat",
+        "index":  "051",
+        "pages":  "482",
+        "juz":  [
+                    {
+                        "index":  "26",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_30"
+                                  }
+                    },
+                    {
+                        "index":  "27",
+                        "verse":  {
+                                      "start":  "verse_31",
+                                      "end":  "verse_60"
+                                  }
+                    }
+                ],
+        "pageStart":  "482",
+        "pageEnd":  "484",
+        "pageCount":  "3",
+        "titleAr":  "الذاريات"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  49,
+        "title":  "At-Tur",
+        "index":  "052",
+        "pages":  "485",
+        "juz":  [
+                    {
+                        "index":  "27",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_49"
+                                  }
+                    }
+                ],
+        "pageStart":  "485",
+        "pageEnd":  "486",
+        "pageCount":  "2",
+        "titleAr":  "الطور"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  62,
+        "title":  "An-Najm",
+        "index":  "053",
+        "pages":  "487",
+        "juz":  [
+                    {
+                        "index":  "27",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_62"
+                                  }
+                    }
+                ],
+        "pageStart":  "487",
+        "pageEnd":  "489",
+        "pageCount":  "3",
+        "titleAr":  "النجم"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  55,
+        "title":  "Al-Qamar",
+        "index":  "054",
+        "pages":  "490",
+        "juz":  [
+                    {
+                        "index":  "27",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_55"
+                                  }
+                    }
+                ],
+        "pageStart":  "490",
+        "pageEnd":  "492",
+        "pageCount":  "3",
+        "titleAr":  "القمر"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  78,
+        "title":  "Ar-Rahman",
+        "index":  "055",
+        "pages":  "493",
+        "juz":  [
+                    {
+                        "index":  "27",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_78"
+                                  }
+                    }
+                ],
+        "pageStart":  "493",
+        "pageEnd":  "495",
+        "pageCount":  "3",
+        "titleAr":  "الرحمن"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  96,
+        "title":  "Al-Waqia",
+        "index":  "056",
+        "pages":  "496",
+        "juz":  [
+                    {
+                        "index":  "27",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_96"
+                                  }
+                    }
+                ],
+        "pageStart":  "496",
+        "pageEnd":  "498",
+        "pageCount":  "3",
+        "titleAr":  "الواقعة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  29,
+        "title":  "Al-Hadid",
+        "index":  "057",
+        "pages":  "499",
+        "juz":  [
+                    {
+                        "index":  "27",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_29"
+                                  }
+                    }
+                ],
+        "pageStart":  "499",
+        "pageEnd":  "503",
+        "pageCount":  "5",
+        "titleAr":  "الحديد"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  22,
+        "title":  "Al-Mujadilah",
+        "index":  "058",
+        "pages":  "504",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_22"
+                                  }
+                    }
+                ],
+        "pageStart":  "504",
+        "pageEnd":  "506",
+        "pageCount":  "3",
+        "titleAr":  "المجادلة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  24,
+        "title":  "Al-Hashr",
+        "index":  "059",
+        "pages":  "507",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_24"
+                                  }
+                    }
+                ],
+        "pageStart":  "507",
+        "pageEnd":  "509",
+        "pageCount":  "3",
+        "titleAr":  "الحشر"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  13,
+        "title":  "Al-Mumtahinah",
+        "index":  "060",
+        "pages":  "510",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_13"
+                                  }
+                    }
+                ],
+        "pageStart":  "510",
+        "pageEnd":  "512",
+        "pageCount":  "3",
+        "titleAr":  "الممتحنة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  14,
+        "title":  "As-Saff",
+        "index":  "061",
+        "pages":  "513",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_14"
+                                  }
+                    }
+                ],
+        "pageStart":  "513",
+        "pageEnd":  "514",
+        "pageCount":  "2",
+        "titleAr":  "الصف"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  11,
+        "title":  "Al-Jumu\u0027ah",
+        "index":  "062",
+        "pages":  "515",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_11"
+                                  }
+                    }
+                ],
+        "pageStart":  "515",
+        "pageEnd":  "515",
+        "pageCount":  "1",
+        "titleAr":  "الجمعة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  11,
+        "title":  "Al-Munafiqun",
+        "index":  "063",
+        "pages":  "516",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_11"
+                                  }
+                    }
+                ],
+        "pageStart":  "516",
+        "pageEnd":  "517",
+        "pageCount":  "2",
+        "titleAr":  "المنافقون"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  18,
+        "title":  "At-Taghabun",
+        "index":  "064",
+        "pages":  "518",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_18"
+                                  }
+                    }
+                ],
+        "pageStart":  "518",
+        "pageEnd":  "519",
+        "pageCount":  "2",
+        "titleAr":  "التغابن"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  12,
+        "title":  "At-Talaq",
+        "index":  "065",
+        "pages":  "520",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_12"
+                                  }
+                    }
+                ],
+        "pageStart":  "520",
+        "pageEnd":  "521",
+        "pageCount":  "2",
+        "titleAr":  "الطلاق"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  12,
+        "title":  "At-Tahrim",
+        "index":  "066",
+        "pages":  "522",
+        "juz":  [
+                    {
+                        "index":  "28",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_12"
+                                  }
+                    }
+                ],
+        "pageStart":  "522",
+        "pageEnd":  "523",
+        "pageCount":  "2",
+        "titleAr":  "التحريم"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  30,
+        "title":  "Al-Mulk",
+        "index":  "067",
+        "pages":  "524",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_30"
+                                  }
+                    }
+                ],
+        "pageStart":  "524",
+        "pageEnd":  "525",
+        "pageCount":  "2",
+        "titleAr":  "الملك"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  52,
+        "title":  "Al-Qalam",
+        "index":  "068",
+        "pages":  "526",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_52"
+                                  }
+                    }
+                ],
+        "pageStart":  "526",
+        "pageEnd":  "528",
+        "pageCount":  "3",
+        "titleAr":  "القلم"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  52,
+        "title":  "Al-Haqqah",
+        "index":  "069",
+        "pages":  "529",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_52"
+                                  }
+                    }
+                ],
+        "pageStart":  "529",
+        "pageEnd":  "530",
+        "pageCount":  "2",
+        "titleAr":  "الحاقة"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  44,
+        "title":  "Al-Ma\u0027arij",
+        "index":  "070",
+        "pages":  "531",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_44"
+                                  }
+                    }
+                ],
+        "pageStart":  "531",
+        "pageEnd":  "532",
+        "pageCount":  "2",
+        "titleAr":  "المعارج"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  28,
+        "title":  "Nuh",
+        "index":  "071",
+        "pages":  "533",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_28"
+                                  }
+                    }
+                ],
+        "pageStart":  "533",
+        "pageEnd":  "533",
+        "pageCount":  "1",
+        "titleAr":  "نوح"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  28,
+        "title":  "Al-Jinn",
+        "index":  "072",
+        "pages":  "534",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_28"
+                                  }
+                    }
+                ],
+        "pageStart":  "534",
+        "pageEnd":  "536",
+        "pageCount":  "3",
+        "titleAr":  "الجن"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  20,
+        "title":  "Al-Muzzammil",
+        "index":  "073",
+        "pages":  "537",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_20"
+                                  }
+                    }
+                ],
+        "pageStart":  "537",
+        "pageEnd":  "537",
+        "pageCount":  "1",
+        "titleAr":  "المزمل"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  56,
+        "title":  "Al-Muddaththir",
+        "index":  "074",
+        "pages":  "538",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_56"
+                                  }
+                    }
+                ],
+        "pageStart":  "538",
+        "pageEnd":  "539",
+        "pageCount":  "2",
+        "titleAr":  "المدثر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  40,
+        "title":  "Al-Qiyamah",
+        "index":  "075",
+        "pages":  "540",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_40"
+                                  }
+                    }
+                ],
+        "pageStart":  "540",
+        "pageEnd":  "541",
+        "pageCount":  "2",
+        "titleAr":  "القيامة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  31,
+        "title":  "Al-Insan",
+        "index":  "076",
+        "pages":  "542",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_31"
+                                  }
+                    }
+                ],
+        "pageStart":  "542",
+        "pageEnd":  "543",
+        "pageCount":  "2",
+        "titleAr":  "الإنسان"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  50,
+        "title":  "Al-Mursalat",
+        "index":  "077",
+        "pages":  "544",
+        "juz":  [
+                    {
+                        "index":  "29",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_50"
+                                  }
+                    }
+                ],
+        "pageStart":  "544",
+        "pageEnd":  "544",
+        "pageCount":  "1",
+        "titleAr":  "المرسلات"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  40,
+        "title":  "An-Naba",
+        "index":  "078",
+        "pages":  "545",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_40"
+                                  }
+                    }
+                ],
+        "pageStart":  "545",
+        "pageEnd":  "546",
+        "pageCount":  "2",
+        "titleAr":  "النبأ"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  46,
+        "title":  "An-Naziat",
+        "index":  "079",
+        "pages":  "547",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_46"
+                                  }
+                    }
+                ],
+        "pageStart":  "547",
+        "pageEnd":  "547",
+        "pageCount":  "1",
+        "titleAr":  "النازعات"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  42,
+        "title":  "Abasa",
+        "index":  "080",
+        "pages":  "548",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_42"
+                                  }
+                    }
+                ],
+        "pageStart":  "548",
+        "pageEnd":  "549",
+        "pageCount":  "2",
+        "titleAr":  "عبس"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  29,
+        "title":  "At-Takwir",
+        "index":  "081",
+        "pages":  "550",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_29"
+                                  }
+                    }
+                ],
+        "pageStart":  "550",
+        "pageEnd":  "550",
+        "pageCount":  "1",
+        "titleAr":  "التكوير"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  19,
+        "title":  "Al-Infitar",
+        "index":  "082",
+        "pages":  "551",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_19"
+                                  }
+                    }
+                ],
+        "pageStart":  "551",
+        "pageEnd":  "551",
+        "pageCount":  "1",
+        "titleAr":  "الإنفطار"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  36,
+        "title":  "Al-Mutaffifin",
+        "index":  "083",
+        "pages":  "552",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_36"
+                                  }
+                    }
+                ],
+        "pageStart":  "552",
+        "pageEnd":  "552",
+        "pageCount":  "1",
+        "titleAr":  "المطففين"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  25,
+        "title":  "Al-Inshiqaq",
+        "index":  "084",
+        "pages":  "553",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_25"
+                                  }
+                    }
+                ],
+        "pageStart":  "553",
+        "pageEnd":  "553",
+        "pageCount":  "1",
+        "titleAr":  "الإنشقاق"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  22,
+        "title":  "Al-Buruj",
+        "index":  "085",
+        "pages":  "554",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_22"
+                                  }
+                    }
+                ],
+        "pageStart":  "554",
+        "pageEnd":  "554",
+        "pageCount":  "1",
+        "titleAr":  "البروج"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  17,
+        "title":  "At-Tariq",
+        "index":  "086",
+        "pages":  "555",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_17"
+                                  }
+                    }
+                ],
+        "pageStart":  "555",
+        "pageEnd":  "555",
+        "pageCount":  "1",
+        "titleAr":  "الطارق"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  19,
+        "title":  "Al-Ala",
+        "index":  "087",
+        "pages":  "556",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_19"
+                                  }
+                    }
+                ],
+        "pageStart":  "556",
+        "pageEnd":  "556",
+        "pageCount":  "1",
+        "titleAr":  "الأعلى"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  26,
+        "title":  "Al-Ghashiyah",
+        "index":  "088",
+        "pages":  "556",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_26"
+                                  }
+                    }
+                ],
+        "pageStart":  "556",
+        "pageEnd":  "556",
+        "pageCount":  "1",
+        "titleAr":  "الغاشية"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  30,
+        "title":  "Al-Fajr",
+        "index":  "089",
+        "pages":  "557",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_30"
+                                  }
+                    }
+                ],
+        "pageStart":  "557",
+        "pageEnd":  "558",
+        "pageCount":  "2",
+        "titleAr":  "الفجر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  20,
+        "title":  "Al-Balad",
+        "index":  "090",
+        "pages":  "559",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_20"
+                                  }
+                    }
+                ],
+        "pageStart":  "559",
+        "pageEnd":  "559",
+        "pageCount":  "1",
+        "titleAr":  "البلد"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  15,
+        "title":  "Ash-Shams",
+        "index":  "091",
+        "pages":  "559",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_15"
+                                  }
+                    }
+                ],
+        "pageStart":  "559",
+        "pageEnd":  "559",
+        "pageCount":  "1",
+        "titleAr":  "الشمس"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  21,
+        "title":  "Al-Lail",
+        "index":  "092",
+        "pages":  "560",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_21"
+                                  }
+                    }
+                ],
+        "pageStart":  "560",
+        "pageEnd":  "560",
+        "pageCount":  "1",
+        "titleAr":  "الليل"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  11,
+        "title":  "Ad-Duha",
+        "index":  "093",
+        "pages":  "561",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_11"
+                                  }
+                    }
+                ],
+        "pageStart":  "561",
+        "pageEnd":  "561",
+        "pageCount":  "1",
+        "titleAr":  "الضحى"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  8,
+        "title":  "Ash-Sharh",
+        "index":  "094",
+        "pages":  "561",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_8"
+                                  }
+                    }
+                ],
+        "pageStart":  "561",
+        "pageEnd":  "561",
+        "pageCount":  "1",
+        "titleAr":  "الشرح"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  8,
+        "title":  "At-Tin",
+        "index":  "095",
+        "pages":  "562",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_8"
+                                  }
+                    }
+                ],
+        "pageStart":  "562",
+        "pageEnd":  "562",
+        "pageCount":  "1",
+        "titleAr":  "التين"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  19,
+        "title":  "Al-Alaq",
+        "index":  "096",
+        "pages":  "562",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_19"
+                                  }
+                    }
+                ],
+        "pageStart":  "562",
+        "pageEnd":  "562",
+        "pageCount":  "1",
+        "titleAr":  "العلق"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  5,
+        "title":  "Al-Qadr",
+        "index":  "097",
+        "pages":  "563",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_5"
+                                  }
+                    }
+                ],
+        "pageStart":  "563",
+        "pageEnd":  "563",
+        "pageCount":  "1",
+        "titleAr":  "القدر"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  8,
+        "title":  "Al-Bayinah",
+        "index":  "098",
+        "pages":  "563",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_8"
+                                  }
+                    }
+                ],
+        "pageStart":  "563",
+        "pageEnd":  "563",
+        "pageCount":  "1",
+        "titleAr":  "البينة"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  8,
+        "title":  "Az-Zalzalah",
+        "index":  "099",
+        "pages":  "564",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_8"
+                                  }
+                    }
+                ],
+        "pageStart":  "564",
+        "pageEnd":  "564",
+        "pageCount":  "1",
+        "titleAr":  "الزلزلة"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  11,
+        "title":  "Al-Adiyat",
+        "index":  "100",
+        "pages":  "564",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_11"
+                                  }
+                    }
+                ],
+        "pageStart":  "564",
+        "pageEnd":  "564",
+        "pageCount":  "1",
+        "titleAr":  "العاديات"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  11,
+        "title":  "Al-Qariah",
+        "index":  "101",
+        "pages":  "565",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_11"
+                                  }
+                    }
+                ],
+        "pageStart":  "565",
+        "pageEnd":  "565",
+        "pageCount":  "1",
+        "titleAr":  "القارعة"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  8,
+        "title":  "Al-Takathur",
+        "index":  "102",
+        "pages":  "565",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_8"
+                                  }
+                    }
+                ],
+        "pageStart":  "565",
+        "pageEnd":  "565",
+        "pageCount":  "1",
+        "titleAr":  "التكاثر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  3,
+        "title":  "Al-Asr",
+        "index":  "103",
+        "pages":  "566",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_3"
+                                  }
+                    }
+                ],
+        "pageStart":  "566",
+        "pageEnd":  "566",
+        "pageCount":  "1",
+        "titleAr":  "العصر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  9,
+        "title":  "Al-Humazah",
+        "index":  "104",
+        "pages":  "566",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_9"
+                                  }
+                    }
+                ],
+        "pageStart":  "566",
+        "pageEnd":  "566",
+        "pageCount":  "1",
+        "titleAr":  "الهمزة"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  5,
+        "title":  "Al-Fil",
+        "index":  "105",
+        "pages":  "566",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_5"
+                                  }
+                    }
+                ],
+        "pageStart":  "566",
+        "pageEnd":  "566",
+        "pageCount":  "1",
+        "titleAr":  "الفيل"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  4,
+        "title":  "Quraish",
+        "index":  "106",
+        "pages":  "567",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_4"
+                                  }
+                    }
+                ],
+        "pageStart":  "567",
+        "pageEnd":  "567",
+        "pageCount":  "1",
+        "titleAr":  "قريش"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  7,
+        "title":  "Al-Ma\u0027un",
+        "index":  "107",
+        "pages":  "567",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_7"
+                                  }
+                    }
+                ],
+        "pageStart":  "567",
+        "pageEnd":  "567",
+        "pageCount":  "1",
+        "titleAr":  "الماعون"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  3,
+        "title":  "Al-Kauthar",
+        "index":  "108",
+        "pages":  "567",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_3"
+                                  }
+                    }
+                ],
+        "pageStart":  "567",
+        "pageEnd":  "567",
+        "pageCount":  "1",
+        "titleAr":  "الكوثر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  6,
+        "title":  "Al-Kafirun",
+        "index":  "109",
+        "pages":  "568",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_6"
+                                  }
+                    }
+                ],
+        "pageStart":  "568",
+        "pageEnd":  "568",
+        "pageCount":  "1",
+        "titleAr":  "الكافرون"
+    },
+    {
+        "place":  "Medina",
+        "type":  "Madaniyah",
+        "count":  3,
+        "title":  "An-Nasr",
+        "index":  "110",
+        "pages":  "568",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_3"
+                                  }
+                    }
+                ],
+        "pageStart":  "568",
+        "pageEnd":  "568",
+        "pageCount":  "1",
+        "titleAr":  "النصر"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  5,
+        "title":  "Al-Masad",
+        "index":  "111",
+        "pages":  "568",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_5"
+                                  }
+                    }
+                ],
+        "pageStart":  "568",
+        "pageEnd":  "568",
+        "pageCount":  "1",
+        "titleAr":  "المسد"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  4,
+        "title":  "Al-Ikhlas",
+        "index":  "112",
+        "pages":  "569",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_4"
+                                  }
+                    }
+                ],
+        "pageStart":  "569",
+        "pageEnd":  "569",
+        "pageCount":  "1",
+        "titleAr":  "الإخلاص"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  5,
+        "title":  "Al-Falaq",
+        "index":  "113",
+        "pages":  "569",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_5"
+                                  }
+                    }
+                ],
+        "pageStart":  "569",
+        "pageEnd":  "569",
+        "pageCount":  "1",
+        "titleAr":  "الفلق"
+    },
+    {
+        "place":  "Mecca",
+        "type":  "Makkiyah",
+        "count":  6,
+        "title":  "An-Nas",
+        "index":  "114",
+        "pages":  "569",
+        "juz":  [
+                    {
+                        "index":  "30",
+                        "verse":  {
+                                      "start":  "verse_1",
+                                      "end":  "verse_6"
+                                  }
+                    }
+                ],
+        "pageStart":  "569",
+        "pageEnd":  "604",
+        "pageCount":  "36",
+        "titleAr":  "الناس"
     }
 ]

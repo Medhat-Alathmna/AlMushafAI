@@ -38,11 +38,13 @@ export class QuranService {
         const mapped: SurahMeta[] = (Array.isArray(list) ? list : []).map((d: any) => ({
           index: Number(d.index),
           title: d.title ?? '',
-          titleAr: d.titleAr ?? '',
+          // tolerate common misspellings/casing for Arabic title
+          titleAr: d.titleAr ?? d.titlarAR ?? d.titlarAr ?? d.titleAR ?? d.TitleAr ?? '',
           type: d.type ?? '',
           place: d.place ?? '',
           count: Number(d.count ?? 0),
-          pages: Number(d.pages ?? 1),
+          // start page can be in pages or pageStart
+          pages: Number(d.pageStart ?? d.pages ?? 1),
         }));
         this.cacheMeta = mapped.sort((a, b) => a.index - b.index);
         if (this.cacheMeta.length) return this.cacheMeta;
@@ -93,5 +95,5 @@ export class QuranService {
       return null;
     }
   }
+  
 }
-
